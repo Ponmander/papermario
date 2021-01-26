@@ -13,8 +13,8 @@ glabel func_80238EDC_6F1FBC
 /* 6F1FDC 80238EFC AFB00018 */  sw        $s0, 0x18($sp)
 /* 6F1FE0 80238F00 8E71000C */  lw        $s1, 0xc($s3)
 /* 6F1FE4 80238F04 8C6400DC */  lw        $a0, 0xdc($v1)
-/* 6F1FE8 80238F08 3C058024 */  lui       $a1, %hi(D_8023CDA4)
-/* 6F1FEC 80238F0C 24A5CDA4 */  addiu     $a1, $a1, %lo(D_8023CDA4)
+/* 6F1FE8 80238F08 3C058024 */  lui       $a1, %hi(D_8023CDA4_6F5E84)
+/* 6F1FEC 80238F0C 24A5CDA4 */  addiu     $a1, $a1, %lo(D_8023CDA4_6F5E84)
 /* 6F1FF0 80238F10 ACA00000 */  sw        $zero, ($a1)
 /* 6F1FF4 80238F14 80820220 */  lb        $v0, 0x220($a0)
 /* 6F1FF8 80238F18 18400002 */  blez      $v0, .L80238F24

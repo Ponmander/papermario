@@ -18,9 +18,9 @@ glabel func_8024026C_CEE4CC
 /* CEE4FC 8024029C 0000102D */   daddu    $v0, $zero, $zero
 .L802402A0:
 /* CEE500 802402A0 8CC50000 */  lw        $a1, ($a2)
-/* CEE504 802402A4 3C068024 */  lui       $a2, %hi(D_80241310)
+/* CEE504 802402A4 3C068024 */  lui       $a2, %hi(D_80241310_CEF570)
 /* CEE508 802402A8 0C0B2026 */  jal       set_variable
-/* CEE50C 802402AC 8CC61310 */   lw       $a2, %lo(D_80241310)($a2)
+/* CEE50C 802402AC 8CC61310 */   lw       $a2, %lo(D_80241310_CEF570)($a2)
 /* CEE510 802402B0 24020002 */  addiu     $v0, $zero, 2
 .L802402B4:
 /* CEE514 802402B4 8FBF0010 */  lw        $ra, 0x10($sp)

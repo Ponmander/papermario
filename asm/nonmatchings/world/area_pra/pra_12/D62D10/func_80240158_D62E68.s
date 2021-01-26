@@ -29,8 +29,8 @@ glabel func_80240158_D62E68
 /* D62EC8 802401B8 27A20034 */  addiu     $v0, $sp, 0x34
 /* D62ECC 802401BC AFA20014 */  sw        $v0, 0x14($sp)
 /* D62ED0 802401C0 C6000030 */  lwc1      $f0, 0x30($s0)
-/* D62ED4 802401C4 3C04800A */  lui       $a0, %hi(D_8009A634)
-/* D62ED8 802401C8 8484A634 */  lh        $a0, %lo(D_8009A634)($a0)
+/* D62ED4 802401C4 3C04800A */  lui       $a0, %hi(D_8009A634_BBD344)
+/* D62ED8 802401C8 8484A634 */  lh        $a0, %lo(D_8009A634_BBD344)($a0)
 /* D62EDC 802401CC 46000007 */  neg.s     $f0, $f0
 /* D62EE0 802401D0 44070000 */  mfc1      $a3, $f0
 /* D62EE4 802401D4 27A20038 */  addiu     $v0, $sp, 0x38
@@ -67,8 +67,8 @@ glabel func_80240158_D62E68
 /* D62F5C 8024024C 54400022 */  bnel      $v0, $zero, .L802402D8
 /* D62F60 80240250 24110011 */   addiu    $s1, $zero, 0x11
 /* D62F64 80240254 9203000E */  lbu       $v1, 0xe($s0)
-/* D62F68 80240258 3C02802E */  lui       $v0, %hi(D_802D9D70)
-/* D62F6C 8024025C 90429D70 */  lbu       $v0, %lo(D_802D9D70)($v0)
+/* D62F68 80240258 3C02802E */  lui       $v0, %hi(D_802D9D70_DFCA80)
+/* D62F6C 8024025C 90429D70 */  lbu       $v0, %lo(D_802D9D70_DFCA80)($v0)
 /* D62F70 80240260 10620018 */  beq       $v1, $v0, .L802402C4
 /* D62F74 80240264 2C6200FE */   sltiu    $v0, $v1, 0xfe
 /* D62F78 80240268 1040000B */  beqz      $v0, .L80240298
@@ -98,13 +98,13 @@ glabel func_80240158_D62E68
 /* D62FD0 802402C0 00000000 */   nop
 .L802402C4:
 /* D62FD4 802402C4 9202000E */  lbu       $v0, 0xe($s0)
-/* D62FD8 802402C8 3C01802E */  lui       $at, %hi(D_802D9D70)
-/* D62FDC 802402CC A0229D70 */  sb        $v0, %lo(D_802D9D70)($at)
+/* D62FD8 802402C8 3C01802E */  lui       $at, %hi(D_802D9D70_DFCA80)
+/* D62FDC 802402CC A0229D70 */  sb        $v0, %lo(D_802D9D70_DFCA80)($at)
 /* D62FE0 802402D0 080900B9 */  j         .L802402E4
 /* D62FE4 802402D4 0240202D */   daddu    $a0, $s2, $zero
 .L802402D8:
-/* D62FE8 802402D8 3C01802E */  lui       $at, %hi(D_802D9D70)
-/* D62FEC 802402DC A0209D70 */  sb        $zero, %lo(D_802D9D70)($at)
+/* D62FE8 802402D8 3C01802E */  lui       $at, %hi(D_802D9D70_DFCA80)
+/* D62FEC 802402DC A0209D70 */  sb        $zero, %lo(D_802D9D70_DFCA80)($at)
 /* D62FF0 802402E0 0240202D */  daddu     $a0, $s2, $zero
 .L802402E4:
 /* D62FF4 802402E4 AC910000 */  sw        $s1, ($a0)

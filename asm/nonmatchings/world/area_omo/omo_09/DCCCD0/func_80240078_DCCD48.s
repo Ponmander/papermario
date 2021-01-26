@@ -19,8 +19,8 @@ glabel func_80240078_DCCD48
 /* DCCD80 802400B0 3C158011 */  lui       $s5, %hi(gPlayerStatus)
 /* DCCD84 802400B4 26B5EFC8 */  addiu     $s5, $s5, %lo(gPlayerStatus)
 /* DCCD88 802400B8 0040982D */  daddu     $s3, $v0, $zero
-/* DCCD8C 802400BC 3C148011 */  lui       $s4, %hi(D_8010EBB0)
-/* DCCD90 802400C0 2694EBB0 */  addiu     $s4, $s4, %lo(D_8010EBB0)
+/* DCCD8C 802400BC 3C148011 */  lui       $s4, %hi(D_8010EBB0_C9B880)
+/* DCCD90 802400C0 2694EBB0 */  addiu     $s4, $s4, %lo(D_8010EBB0_C9B880)
 /* DCCD94 802400C4 0C090000 */  jal       func_80240000_DCCCD0
 /* DCCD98 802400C8 AE000084 */   sw       $zero, 0x84($s0)
 /* DCCD9C 802400CC 14400073 */  bnez      $v0, .L8024029C
@@ -61,11 +61,11 @@ glabel func_80240078_DCCD48
 /* DCCE28 80240158 0040402D */  daddu     $t0, $v0, $zero
 /* DCCE2C 8024015C 0000302D */  daddu     $a2, $zero, $zero
 /* DCCE30 80240160 24050004 */  addiu     $a1, $zero, 4
-/* DCCE34 80240164 3C078024 */  lui       $a3, %hi(D_80243A90)
-/* DCCE38 80240168 24E73A90 */  addiu     $a3, $a3, %lo(D_80243A90)
+/* DCCE34 80240164 3C078024 */  lui       $a3, %hi(D_80243A90_DD0760)
+/* DCCE38 80240168 24E73A90 */  addiu     $a3, $a3, %lo(D_80243A90_DD0760)
 /* DCCE3C 8024016C 00E0202D */  daddu     $a0, $a3, $zero
-/* DCCE40 80240170 3C038024 */  lui       $v1, %hi(D_80243A80)
-/* DCCE44 80240174 24633A80 */  addiu     $v1, $v1, %lo(D_80243A80)
+/* DCCE40 80240170 3C038024 */  lui       $v1, %hi(D_80243A80_DD0750)
+/* DCCE44 80240174 24633A80 */  addiu     $v1, $v1, %lo(D_80243A80_DD0750)
 .L80240178:
 /* DCCE48 80240178 8C620000 */  lw        $v0, ($v1)
 /* DCCE4C 8024017C 55020007 */  bnel      $t0, $v0, .L8024019C
@@ -99,11 +99,11 @@ glabel func_80240078_DCCD48
 /* DCCEA8 802401D8 3C178016 */  lui       $s7, %hi(gCollisionStatus)
 /* DCCEAC 802401DC 26F7A550 */  addiu     $s7, $s7, %lo(gCollisionStatus)
 /* DCCEB0 802401E0 24120004 */  addiu     $s2, $zero, 4
-/* DCCEB4 802401E4 3C168024 */  lui       $s6, %hi(D_80243A90)
-/* DCCEB8 802401E8 26D63A90 */  addiu     $s6, $s6, %lo(D_80243A90)
+/* DCCEB4 802401E4 3C168024 */  lui       $s6, %hi(D_80243A90_DD0760)
+/* DCCEB8 802401E8 26D63A90 */  addiu     $s6, $s6, %lo(D_80243A90_DD0760)
 /* DCCEBC 802401EC 02C0802D */  daddu     $s0, $s6, $zero
-/* DCCEC0 802401F0 3C118024 */  lui       $s1, %hi(D_80243A80)
-/* DCCEC4 802401F4 26313A80 */  addiu     $s1, $s1, %lo(D_80243A80)
+/* DCCEC0 802401F0 3C118024 */  lui       $s1, %hi(D_80243A80_DD0750)
+/* DCCEC4 802401F4 26313A80 */  addiu     $s1, $s1, %lo(D_80243A80_DD0750)
 /* DCCEC8 802401F8 261E0020 */  addiu     $fp, $s0, 0x20
 .L802401FC:
 /* DCCECC 802401FC 86E20002 */  lh        $v0, 2($s7)

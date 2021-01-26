@@ -35,8 +35,8 @@ glabel func_80240FE0_ED0FD0
 /* ED1048 80241058 E6200014 */  swc1      $f0, 0x14($s1)
 /* ED104C 8024105C AE220028 */  sw        $v0, 0x28($s1)
 /* ED1050 80241060 C6000018 */  lwc1      $f0, 0x18($s0)
-/* ED1054 80241064 3C028010 */  lui       $v0, %hi(D_800FFC90)
-/* ED1058 80241068 8C42FC90 */  lw        $v0, %lo(D_800FFC90)($v0)
+/* ED1054 80241064 3C028010 */  lui       $v0, %hi(D_800FFC90_D8FC80)
+/* ED1058 80241068 8C42FC90 */  lw        $v0, %lo(D_800FFC90_D8FC80)($v0)
 /* ED105C 8024106C E6200018 */  swc1      $f0, 0x18($s1)
 /* ED1060 80241070 8C460028 */  lw        $a2, 0x28($v0)
 /* ED1064 80241074 0C00ABDC */  jal       fio_validate_header_checksums

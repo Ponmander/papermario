@@ -10,8 +10,8 @@ glabel func_8021950C_6BD09C
 /* 6BD0B0 80219520 24020001 */  addiu     $v0, $zero, 1
 /* 6BD0B4 80219524 0080282D */  daddu     $a1, $a0, $zero
 /* 6BD0B8 80219528 0080302D */  daddu     $a2, $a0, $zero
-/* 6BD0BC 8021952C 3C038015 */  lui       $v1, %hi(D_801512F0)
-/* 6BD0C0 80219530 8C6312F0 */  lw        $v1, %lo(D_801512F0)($v1)
+/* 6BD0BC 8021952C 3C038015 */  lui       $v1, %hi(D_801512F0_5F4E80)
+/* 6BD0C0 80219530 8C6312F0 */  lw        $v1, %lo(D_801512F0_5F4E80)($v1)
 /* 6BD0C4 80219534 0080382D */  daddu     $a3, $a0, $zero
 /* 6BD0C8 80219538 0C046F97 */  jal       set_background_color_blend
 /* 6BD0CC 8021953C A0620000 */   sb       $v0, ($v1)

@@ -10,8 +10,8 @@ glabel func_8021973C_465BCC
 /* 465BE0 80219750 24020001 */  addiu     $v0, $zero, 1
 /* 465BE4 80219754 0080282D */  daddu     $a1, $a0, $zero
 /* 465BE8 80219758 0080302D */  daddu     $a2, $a0, $zero
-/* 465BEC 8021975C 3C038015 */  lui       $v1, %hi(D_801512F0)
-/* 465BF0 80219760 8C6312F0 */  lw        $v1, %lo(D_801512F0)($v1)
+/* 465BEC 8021975C 3C038015 */  lui       $v1, %hi(D_801512F0_39D780)
+/* 465BF0 80219760 8C6312F0 */  lw        $v1, %lo(D_801512F0_39D780)($v1)
 /* 465BF4 80219764 0080382D */  daddu     $a3, $a0, $zero
 /* 465BF8 80219768 0C046F97 */  jal       set_background_color_blend
 /* 465BFC 8021976C A0620000 */   sb       $v0, ($v1)

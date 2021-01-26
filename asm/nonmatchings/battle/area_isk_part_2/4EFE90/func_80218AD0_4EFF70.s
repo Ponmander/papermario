@@ -3,8 +3,8 @@
 
 glabel func_80218AD0_4EFF70
 /* 4EFF70 80218AD0 27BDFFE0 */  addiu     $sp, $sp, -0x20
-/* 4EFF74 80218AD4 3C028022 */  lui       $v0, %hi(D_80220780)
-/* 4EFF78 80218AD8 24420780 */  addiu     $v0, $v0, %lo(D_80220780)
+/* 4EFF74 80218AD4 3C028022 */  lui       $v0, %hi(D_80220780_4F7C20)
+/* 4EFF78 80218AD8 24420780 */  addiu     $v0, $v0, %lo(D_80220780_4F7C20)
 /* 4EFF7C 80218ADC 3C013E99 */  lui       $at, 0x3e99
 /* 4EFF80 80218AE0 3421999A */  ori       $at, $at, 0x999a
 /* 4EFF84 80218AE4 44810000 */  mtc1      $at, $f0

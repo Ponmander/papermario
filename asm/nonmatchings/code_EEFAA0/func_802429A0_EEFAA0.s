@@ -3,8 +3,8 @@
 
 glabel func_802429A0_EEFAA0
 /* EEFAA0 802429A0 AC800084 */  sw        $zero, 0x84($a0)
-/* EEFAA4 802429A4 3C038011 */  lui       $v1, %hi(D_8011762C)
-/* EEFAA8 802429A8 8063762C */  lb        $v1, %lo(D_8011762C)($v1)
+/* EEFAA4 802429A4 3C038011 */  lui       $v1, %hi(D_8011762C_DC472C)
+/* EEFAA8 802429A8 8063762C */  lb        $v1, %lo(D_8011762C_DC472C)($v1)
 /* EEFAAC 802429AC 2402000E */  addiu     $v0, $zero, 0xe
 /* EEFAB0 802429B0 10620004 */  beq       $v1, $v0, .L802429C4
 /* EEFAB4 802429B4 24020001 */   addiu    $v0, $zero, 1

@@ -6,8 +6,8 @@ glabel func_802A98D0_42D7E0
 /* 42D7E4 802A98D4 AFB40028 */  sw        $s4, 0x28($sp)
 /* 42D7E8 802A98D8 3C1451EB */  lui       $s4, 0x51eb
 /* 42D7EC 802A98DC AFB30024 */  sw        $s3, 0x24($sp)
-/* 42D7F0 802A98E0 3C13802A */  lui       $s3, %hi(D_8029FBE0)
-/* 42D7F4 802A98E4 2673FBE0 */  addiu     $s3, $s3, %lo(D_8029FBE0)
+/* 42D7F0 802A98E0 3C13802A */  lui       $s3, %hi(D_8029FBE0_423AF0)
+/* 42D7F4 802A98E4 2673FBE0 */  addiu     $s3, $s3, %lo(D_8029FBE0_423AF0)
 /* 42D7F8 802A98E8 AFBF002C */  sw        $ra, 0x2c($sp)
 /* 42D7FC 802A98EC AFB20020 */  sw        $s2, 0x20($sp)
 /* 42D800 802A98F0 AFB1001C */  sw        $s1, 0x1c($sp)
@@ -48,8 +48,8 @@ glabel func_802A98D0_42D7E0
 /* 42D88C 802A997C 0220282D */  daddu     $a1, $s1, $zero
 /* 42D890 802A9980 0C05126B */  jal       get_icon_render_pos
 /* 42D894 802A9984 0200302D */   daddu    $a2, $s0, $zero
-/* 42D898 802A9988 3C02802B */  lui       $v0, %hi(D_802A9B00)
-/* 42D89C 802A998C 8C429B00 */  lw        $v0, %lo(D_802A9B00)($v0)
+/* 42D898 802A9988 3C02802B */  lui       $v0, %hi(D_802A9B00_42DA10)
+/* 42D89C 802A998C 8C429B00 */  lw        $v0, %lo(D_802A9B00_42DA10)($v0)
 /* 42D8A0 802A9990 14400006 */  bnez      $v0, .L802A99AC
 /* 42D8A4 802A9994 24070001 */   addiu    $a3, $zero, 1
 /* 42D8A8 802A9998 96630044 */  lhu       $v1, 0x44($s3)

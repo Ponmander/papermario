@@ -15,15 +15,15 @@ glabel func_802BD17C_31B19C
 /* 31B1C4 802BD1A4 0C04CFF2 */  jal       func_80133FC8
 /* 31B1C8 802BD1A8 00000000 */   nop
 /* 31B1CC 802BD1AC 0040282D */  daddu     $a1, $v0, $zero
-/* 31B1D0 802BD1B0 3C01802C */  lui       $at, %hi(D_802BEC68)
-/* 31B1D4 802BD1B4 AC25EC68 */  sw        $a1, %lo(D_802BEC68)($at)
+/* 31B1D0 802BD1B0 3C01802C */  lui       $at, %hi(D_802BEC68_31CC88)
+/* 31B1D4 802BD1B4 AC25EC68 */  sw        $a1, %lo(D_802BEC68_31CC88)($at)
 /* 31B1D8 802BD1B8 04A0000D */  bltz      $a1, .L802BD1F0
 /* 31B1DC 802BD1BC 24040001 */   addiu    $a0, $zero, 1
-/* 31B1E0 802BD1C0 3C02800A */  lui       $v0, %hi(D_8009A650)
-/* 31B1E4 802BD1C4 2442A650 */  addiu     $v0, $v0, %lo(D_8009A650)
+/* 31B1E0 802BD1C0 3C02800A */  lui       $v0, %hi(D_8009A650_F8670)
+/* 31B1E4 802BD1C4 2442A650 */  addiu     $v0, $v0, %lo(D_8009A650_F8670)
 /* 31B1E8 802BD1C8 8C430000 */  lw        $v1, ($v0)
-/* 31B1EC 802BD1CC 3C01802C */  lui       $at, %hi(D_802BEC6C)
-/* 31B1F0 802BD1D0 AC24EC6C */  sw        $a0, %lo(D_802BEC6C)($at)
+/* 31B1EC 802BD1CC 3C01802C */  lui       $at, %hi(D_802BEC6C_31CC8C)
+/* 31B1F0 802BD1D0 AC24EC6C */  sw        $a0, %lo(D_802BEC6C_31CC8C)($at)
 /* 31B1F4 802BD1D4 00A0202D */  daddu     $a0, $a1, $zero
 /* 31B1F8 802BD1D8 3C050020 */  lui       $a1, 0x20
 /* 31B1FC 802BD1DC 34630040 */  ori       $v1, $v1, 0x40

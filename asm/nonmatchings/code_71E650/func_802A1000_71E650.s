@@ -95,15 +95,15 @@ glabel func_802A1000_71E650
 /* 71E7B0 802A1160 27A20028 */  addiu     $v0, $sp, 0x28
 /* 71E7B4 802A1164 0C00B94E */  jal       get_screen_coords
 /* 71E7B8 802A1168 AFA20018 */   sw       $v0, 0x18($sp)
-/* 71E7BC 802A116C 3C048011 */  lui       $a0, %hi(D_80108A64)
-/* 71E7C0 802A1170 24848A64 */  addiu     $a0, $a0, %lo(D_80108A64)
+/* 71E7BC 802A116C 3C048011 */  lui       $a0, %hi(D_80108A64_5860B4)
+/* 71E7C0 802A1170 24848A64 */  addiu     $a0, $a0, %lo(D_80108A64_5860B4)
 /* 71E7C4 802A1174 0C050529 */  jal       create_icon
 /* 71E7C8 802A1178 00000000 */   nop
 /* 71E7CC 802A117C 8FA50020 */  lw        $a1, 0x20($sp)
 /* 71E7D0 802A1180 8FA60024 */  lw        $a2, 0x24($sp)
 /* 71E7D4 802A1184 0040202D */  daddu     $a0, $v0, $zero
-/* 71E7D8 802A1188 3C01802A */  lui       $at, %hi(D_802A3F50)
-/* 71E7DC 802A118C AC243F50 */  sw        $a0, %lo(D_802A3F50)($at)
+/* 71E7D8 802A1188 3C01802A */  lui       $at, %hi(D_802A3F50_7215A0)
+/* 71E7DC 802A118C AC243F50 */  sw        $a0, %lo(D_802A3F50_7215A0)($at)
 /* 71E7E0 802A1190 24A50024 */  addiu     $a1, $a1, 0x24
 /* 71E7E4 802A1194 0C051261 */  jal       set_icon_render_pos
 /* 71E7E8 802A1198 24C6FFC1 */   addiu    $a2, $a2, -0x3f

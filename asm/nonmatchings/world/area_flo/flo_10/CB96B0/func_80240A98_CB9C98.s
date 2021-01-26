@@ -360,8 +360,8 @@ glabel func_80240A98_CB9C98
 /* CBA1E0 80240FE0 34A5F000 */  ori       $a1, $a1, 0xf000
 /* CBA1E4 80240FE4 AE22000C */  sw        $v0, 0xc($s1)
 /* CBA1E8 80240FE8 3C11E700 */  lui       $s1, 0xe700
-/* CBA1EC 80240FEC 3C04800A */  lui       $a0, %hi(D_8009A64C)
-/* CBA1F0 80240FF0 8C84A64C */  lw        $a0, %lo(D_8009A64C)($a0)
+/* CBA1EC 80240FEC 3C04800A */  lui       $a0, %hi(D_8009A64C_B1384C)
+/* CBA1F0 80240FF0 8C84A64C */  lw        $a0, %lo(D_8009A64C_B1384C)($a0)
 /* CBA1F4 80240FF4 0200102D */  daddu     $v0, $s0, $zero
 /* CBA1F8 80240FF8 26100008 */  addiu     $s0, $s0, 8
 /* CBA1FC 80240FFC AE500000 */  sw        $s0, ($s2)

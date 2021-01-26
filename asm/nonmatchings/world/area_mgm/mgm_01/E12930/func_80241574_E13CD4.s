@@ -8,8 +8,8 @@ glabel func_80241574_E13CD4
 /* E13CE0 80241580 0000202D */   daddu    $a0, $zero, $zero
 /* E13CE4 80241584 0000302D */  daddu     $a2, $zero, $zero
 /* E13CE8 80241588 2407FFFF */  addiu     $a3, $zero, -1
-/* E13CEC 8024158C 3C058024 */  lui       $a1, %hi(D_80241B70)
-/* E13CF0 80241590 24A51B70 */  addiu     $a1, $a1, %lo(D_80241B70)
+/* E13CEC 8024158C 3C058024 */  lui       $a1, %hi(D_80241B70_E142D0)
+/* E13CF0 80241590 24A51B70 */  addiu     $a1, $a1, %lo(D_80241B70_E142D0)
 /* E13CF4 80241594 8C420080 */  lw        $v0, 0x80($v0)
 /* E13CF8 80241598 3C048024 */  lui       $a0, %hi(func_80241B44_E06EA4)
 /* E13CFC 8024159C 24841B44 */  addiu     $a0, $a0, %lo(func_80241B44_E06EA4)

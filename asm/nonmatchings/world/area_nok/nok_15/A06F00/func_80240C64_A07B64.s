@@ -104,8 +104,8 @@ glabel func_80240C64_A07B64
 /* A07CE8 80240DE8 1040000A */  beqz      $v0, .L80240E14
 /* A07CEC 80240DEC 4600C106 */   mov.s    $f4, $f24
 /* A07CF0 80240DF0 4614C081 */  sub.s     $f2, $f24, $f20
-/* A07CF4 80240DF4 3C018024 */  lui       $at, %hi(D_80244D58)
-/* A07CF8 80240DF8 D4204D58 */  ldc1      $f0, %lo(D_80244D58)($at)
+/* A07CF4 80240DF4 3C018024 */  lui       $at, %hi(D_80244D58_A0BC58)
+/* A07CF8 80240DF8 D4204D58 */  ldc1      $f0, %lo(D_80244D58_A0BC58)($at)
 /* A07CFC 80240DFC 460010A1 */  cvt.d.s   $f2, $f2
 /* A07D00 80240E00 46201082 */  mul.d     $f2, $f2, $f0
 /* A07D04 80240E04 00000000 */  nop

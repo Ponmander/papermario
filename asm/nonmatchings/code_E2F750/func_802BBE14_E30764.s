@@ -8,8 +8,8 @@ glabel func_802BBE14_E30764
 /* E30770 802BBE20 AFBF0018 */  sw        $ra, 0x18($sp)
 /* E30774 802BBE24 AFB10014 */  sw        $s1, 0x14($sp)
 /* E30778 802BBE28 8E110040 */  lw        $s1, 0x40($s0)
-/* E3077C 802BBE2C 3C028016 */  lui       $v0, %hi(D_8015C7D0)
-/* E30780 802BBE30 8C42C7D0 */  lw        $v0, %lo(D_8015C7D0)($v0)
+/* E3077C 802BBE2C 3C028016 */  lui       $v0, %hi(D_8015C7D0_CD1120)
+/* E30780 802BBE30 8C42C7D0 */  lw        $v0, %lo(D_8015C7D0_CD1120)($v0)
 /* E30784 802BBE34 0C0AEDF8 */  jal       func_802BB7E0_E30130
 /* E30788 802BBE38 AE2200A0 */   sw       $v0, 0xa0($s1)
 /* E3078C 802BBE3C 3C02802C */  lui       $v0, %hi(func_802BB3B8_E2FD08)

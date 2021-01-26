@@ -30,8 +30,8 @@ glabel func_80240310_9BB5B0
 /* 9BB614 80240374 2404FFFC */   addiu    $a0, $zero, -4
 /* 9BB618 80240378 3C138011 */  lui       $s3, %hi(gPlayerStatus)
 /* 9BB61C 8024037C 2673EFC8 */  addiu     $s3, $s3, %lo(gPlayerStatus)
-/* 9BB620 80240380 3C168011 */  lui       $s6, %hi(D_8010EBB0)
-/* 9BB624 80240384 26D6EBB0 */  addiu     $s6, $s6, %lo(D_8010EBB0)
+/* 9BB620 80240380 3C168011 */  lui       $s6, %hi(D_8010EBB0_889E50)
+/* 9BB624 80240384 26D6EBB0 */  addiu     $s6, $s6, %lo(D_8010EBB0_889E50)
 /* 9BB628 80240388 1200001C */  beqz      $s0, .L802403FC
 /* 9BB62C 8024038C 0040B82D */   daddu    $s7, $v0, $zero
 /* 9BB630 80240390 0C00AB39 */  jal       heap_malloc
@@ -228,9 +228,9 @@ glabel func_80240310_9BB5B0
 /* 9BB908 80240668 E6040028 */  swc1      $f4, 0x28($s0)
 /* 9BB90C 8024066C 00021080 */  sll       $v0, $v0, 2
 /* 9BB910 80240670 E7A00010 */  swc1      $f0, 0x10($sp)
-/* 9BB914 80240674 3C048024 */  lui       $a0, %hi(D_80240F00)
+/* 9BB914 80240674 3C048024 */  lui       $a0, %hi(D_80240F00_9BC1A0)
 /* 9BB918 80240678 00822021 */  addu      $a0, $a0, $v0
-/* 9BB91C 8024067C 8C840F00 */  lw        $a0, %lo(D_80240F00)($a0)
+/* 9BB91C 8024067C 8C840F00 */  lw        $a0, %lo(D_80240F00_9BC1A0)($a0)
 /* 9BB920 80240680 8E060004 */  lw        $a2, 4($s0)
 /* 9BB924 80240684 8E070008 */  lw        $a3, 8($s0)
 /* 9BB928 80240688 0C052757 */  jal       play_sound_at_position

@@ -121,8 +121,8 @@ glabel func_80241234_E13994
 /* E13B4C 802413EC 3C118024 */  lui       $s1, %hi(func_80241AE0_DCE7B0)
 /* E13B50 802413F0 26311AE0 */  addiu     $s1, $s1, %lo(func_80241AE0_DCE7B0)
 /* E13B54 802413F4 8EB00074 */  lw        $s0, 0x74($s5)
-/* E13B58 802413F8 3C04802F */  lui       $a0, %hi(D_802EA0C4)
-/* E13B5C 802413FC 2484A0C4 */  addiu     $a0, $a0, %lo(D_802EA0C4)
+/* E13B58 802413F8 3C04802F */  lui       $a0, %hi(D_802EA0C4_EBC824)
+/* E13B5C 802413FC 2484A0C4 */  addiu     $a0, $a0, %lo(D_802EA0C4_EBC824)
 /* E13B60 80241400 02139821 */  addu      $s3, $s0, $s3
 /* E13B64 80241404 02129021 */  addu      $s2, $s0, $s2
 /* E13B68 80241408 02118821 */  addu      $s1, $s0, $s1

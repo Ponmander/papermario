@@ -18,9 +18,9 @@ glabel func_80241970_CB06B0
 /* CB06E0 802419A0 0000102D */   daddu    $v0, $zero, $zero
 .L802419A4:
 /* CB06E4 802419A4 8CC50000 */  lw        $a1, ($a2)
-/* CB06E8 802419A8 3C068024 */  lui       $a2, %hi(D_8024308C)
+/* CB06E8 802419A8 3C068024 */  lui       $a2, %hi(D_8024308C_CB1DCC)
 /* CB06EC 802419AC 0C0B2026 */  jal       set_variable
-/* CB06F0 802419B0 8CC6308C */   lw       $a2, %lo(D_8024308C)($a2)
+/* CB06F0 802419B0 8CC6308C */   lw       $a2, %lo(D_8024308C_CB1DCC)($a2)
 /* CB06F4 802419B4 24020002 */  addiu     $v0, $zero, 2
 .L802419B8:
 /* CB06F8 802419B8 8FBF0010 */  lw        $ra, 0x10($sp)

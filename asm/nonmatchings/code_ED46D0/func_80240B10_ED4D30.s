@@ -4,10 +4,10 @@
 glabel func_80240B10_ED4D30
 /* ED4D30 80240B10 27BDFF68 */  addiu     $sp, $sp, -0x98
 /* ED4D34 80240B14 24040030 */  addiu     $a0, $zero, 0x30
-/* ED4D38 80240B18 3C038008 */  lui       $v1, %hi(D_8007C760)
-/* ED4D3C 80240B1C 8C63C760 */  lw        $v1, %lo(D_8007C760)($v1)
-/* ED4D40 80240B20 3C05800C */  lui       $a1, %hi(D_800B8D80)
-/* ED4D44 80240B24 24A58D80 */  addiu     $a1, $a1, %lo(D_800B8D80)
+/* ED4D38 80240B18 3C038008 */  lui       $v1, %hi(D_8007C760_D10980)
+/* ED4D3C 80240B1C 8C63C760 */  lw        $v1, %lo(D_8007C760_D10980)($v1)
+/* ED4D40 80240B20 3C05800C */  lui       $a1, %hi(D_800B8D80_D4CFA0)
+/* ED4D44 80240B24 24A58D80 */  addiu     $a1, $a1, %lo(D_800B8D80_D4CFA0)
 /* ED4D48 80240B28 AFBF0064 */  sw        $ra, 0x64($sp)
 /* ED4D4C 80240B2C AFBE0060 */  sw        $fp, 0x60($sp)
 /* ED4D50 80240B30 AFB7005C */  sw        $s7, 0x5c($sp)
@@ -311,10 +311,10 @@ glabel func_80240B10_ED4D30
 /* ED51B4 80240F94 34C64010 */  ori       $a2, $a2, 0x4010
 /* ED51B8 80240F98 46060582 */  mul.s     $f22, $f0, $f6
 /* ED51BC 80240F9C 00000000 */  nop
-/* ED51C0 80240FA0 3C13800A */  lui       $s3, %hi(D_800A15C4)
-/* ED51C4 80240FA4 267315C4 */  addiu     $s3, $s3, %lo(D_800A15C4)
-/* ED51C8 80240FA8 3C12800A */  lui       $s2, %hi(D_800A1530)
-/* ED51CC 80240FAC 26521530 */  addiu     $s2, $s2, %lo(D_800A1530)
+/* ED51C0 80240FA0 3C13800A */  lui       $s3, %hi(D_800A15C4_D357E4)
+/* ED51C4 80240FA4 267315C4 */  addiu     $s3, $s3, %lo(D_800A15C4_D357E4)
+/* ED51C8 80240FA8 3C12800A */  lui       $s2, %hi(D_800A1530_D35750)
+/* ED51CC 80240FAC 26521530 */  addiu     $s2, $s2, %lo(D_800A1530_D35750)
 /* ED51D0 80240FB0 AFB8003C */  sw        $t8, 0x3c($sp)
 /* ED51D4 80240FB4 8E700000 */  lw        $s0, ($s3)
 /* ED51D8 80240FB8 4604A002 */  mul.s     $f0, $f20, $f4
@@ -353,10 +353,10 @@ glabel func_80240B10_ED4D30
 /* ED525C 8024103C 8E440000 */  lw        $a0, ($s2)
 /* ED5260 80241040 0C019BF8 */  jal       func_80066FE0
 /* ED5264 80241044 00000000 */   nop
-/* ED5268 80241048 3C048024 */  lui       $a0, %hi(D_80244BB8)
-/* ED526C 8024104C 24844BB8 */  addiu     $a0, $a0, %lo(D_80244BB8)
-/* ED5270 80241050 3C058024 */  lui       $a1, %hi(D_80244BEC)
-/* ED5274 80241054 24A54BEC */  addiu     $a1, $a1, %lo(D_80244BEC)
+/* ED5268 80241048 3C048024 */  lui       $a0, %hi(D_80244BB8_ED8DD8)
+/* ED526C 8024104C 24844BB8 */  addiu     $a0, $a0, %lo(D_80244BB8_ED8DD8)
+/* ED5270 80241050 3C058024 */  lui       $a1, %hi(D_80244BEC_ED8E0C)
+/* ED5274 80241054 24A54BEC */  addiu     $a1, $a1, %lo(D_80244BEC_ED8E0C)
 /* ED5278 80241058 240600AF */  addiu     $a2, $zero, 0xaf
 /* ED527C 8024105C 0C00973F */  jal       func_80025CFC
 /* ED5280 80241060 0040382D */   daddu    $a3, $v0, $zero
@@ -370,8 +370,8 @@ glabel func_80240B10_ED4D30
 /* ED529C 8024107C 3C03FFFD */  lui       $v1, 0xfffd
 /* ED52A0 80241080 3463FEFF */  ori       $v1, $v1, 0xfeff
 /* ED52A4 80241084 3C05F8F0 */  lui       $a1, 0xf8f0
-/* ED52A8 80241088 3C14800A */  lui       $s4, %hi(D_800A15A4)
-/* ED52AC 8024108C 269415A4 */  addiu     $s4, $s4, %lo(D_800A15A4)
+/* ED52A8 80241088 3C14800A */  lui       $s4, %hi(D_800A15A4_D357C4)
+/* ED52AC 8024108C 269415A4 */  addiu     $s4, $s4, %lo(D_800A15A4_D357C4)
 /* ED52B0 80241090 34A5F000 */  ori       $a1, $a1, 0xf000
 /* ED52B4 80241094 8E720000 */  lw        $s2, ($s3)
 /* ED52B8 80241098 8E840000 */  lw        $a0, ($s4)
@@ -412,10 +412,10 @@ glabel func_80240B10_ED4D30
 /* ED5344 80241124 8E840000 */  lw        $a0, ($s4)
 /* ED5348 80241128 0C019BF8 */  jal       func_80066FE0
 /* ED534C 8024112C 00000000 */   nop
-/* ED5350 80241130 3C048024 */  lui       $a0, %hi(D_80244BB8)
-/* ED5354 80241134 24844BB8 */  addiu     $a0, $a0, %lo(D_80244BB8)
-/* ED5358 80241138 3C058024 */  lui       $a1, %hi(D_80244BEC)
-/* ED535C 8024113C 24A54BEC */  addiu     $a1, $a1, %lo(D_80244BEC)
+/* ED5350 80241130 3C048024 */  lui       $a0, %hi(D_80244BB8_ED8DD8)
+/* ED5354 80241134 24844BB8 */  addiu     $a0, $a0, %lo(D_80244BB8_ED8DD8)
+/* ED5358 80241138 3C058024 */  lui       $a1, %hi(D_80244BEC_ED8E0C)
+/* ED535C 8024113C 24A54BEC */  addiu     $a1, $a1, %lo(D_80244BEC_ED8E0C)
 /* ED5360 80241140 240600BA */  addiu     $a2, $zero, 0xba
 /* ED5364 80241144 0C00973F */  jal       func_80025CFC
 /* ED5368 80241148 0040382D */   daddu    $a3, $v0, $zero

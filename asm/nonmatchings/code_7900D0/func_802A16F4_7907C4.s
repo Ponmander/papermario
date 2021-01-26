@@ -125,8 +125,8 @@ glabel func_802A16F4_7907C4
 /* 790994 802A18C4 24042106 */   addiu    $a0, $zero, 0x2106
 /* 790998 802A18C8 24020002 */  addiu     $v0, $zero, 2
 /* 79099C 802A18CC 24030001 */  addiu     $v1, $zero, 1
-/* 7909A0 802A18D0 3C01802A */  lui       $at, %hi(D_802A2CC0)
-/* 7909A4 802A18D4 AC232CC0 */  sw        $v1, %lo(D_802A2CC0)($at)
+/* 7909A0 802A18D0 3C01802A */  lui       $at, %hi(D_802A2CC0_791D90)
+/* 7909A4 802A18D4 AC232CC0 */  sw        $v1, %lo(D_802A2CC0_791D90)($at)
 .L802A18D8:
 /* 7909A8 802A18D8 8FBF001C */  lw        $ra, 0x1c($sp)
 /* 7909AC 802A18DC 8FB00018 */  lw        $s0, 0x18($sp)

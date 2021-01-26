@@ -18,9 +18,9 @@ glabel func_802406A4_AB0694
 /* AB06C4 802406D4 0000102D */   daddu    $v0, $zero, $zero
 .L802406D8:
 /* AB06C8 802406D8 8CC50000 */  lw        $a1, ($a2)
-/* AB06CC 802406DC 3C068024 */  lui       $a2, %hi(D_80241220)
+/* AB06CC 802406DC 3C068024 */  lui       $a2, %hi(D_80241220_AB1210)
 /* AB06D0 802406E0 0C0B2026 */  jal       set_variable
-/* AB06D4 802406E4 8CC61220 */   lw       $a2, %lo(D_80241220)($a2)
+/* AB06D4 802406E4 8CC61220 */   lw       $a2, %lo(D_80241220_AB1210)($a2)
 /* AB06D8 802406E8 24020002 */  addiu     $v0, $zero, 2
 .L802406EC:
 /* AB06DC 802406EC 8FBF0010 */  lw        $ra, 0x10($sp)

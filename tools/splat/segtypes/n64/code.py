@@ -269,15 +269,19 @@ class N64SegCode(N64Segment):
 
         self.detected_syms[addr] = mnemonic
 
-    def get_symbol_name(self, addr, rom_addr, funcs=None):
-        if funcs and addr in funcs:
-            return self.get_unique_func_name(addr, rom_addr)
-        if addr in self.all_functions:
-            return self.all_functions[addr] # todo clean up funcs vs all_functions
+    def get_symbol_name(self, addr, rom_addr, funcs=None, is_data=False):
+        ram_suffix = f"_{addr:X}"
+        rom_suffix = f"_{rom_addr:X}"
+
+        if addr in self.jumptables:
+            return f"jtbl{ram_suffix}{rom_suffix}"
+        if not is_data:
+            if funcs and addr in funcs:
+                return self.get_unique_func_name(addr, rom_addr)
+            if addr in self.all_functions:
+                return self.all_functions[addr] # todo clean up funcs vs all_functions
         if addr in self.provided_symbols:
             return self.provided_symbols[addr]
-        if addr in self.jumptables:
-            return f"jtbl_{addr:X}_{rom_addr:X}"
         if addr in self.symbol_ranges:
             ret = self.symbol_ranges.get(addr)
             offset = addr - self.symbol_ranges.getrange(addr).start
@@ -285,7 +289,10 @@ class N64SegCode(N64Segment):
                 ret += f"+0x{offset:X}"
             return ret
 
-        return f"D_{addr:X}"
+        if self.is_overlay:
+            return f"D{ram_suffix}{rom_suffix}"
+        else:
+            return f"D{ram_suffix}"
 
     # Determine symbols
     def determine_symbols(self, funcs, rom_addr):
@@ -502,8 +509,10 @@ class N64SegCode(N64Segment):
                         byte_str = f"L{bits:X}_{rom_addr:X}"
                     else:
                         byte_str = f"0x{bits:X}"
+            elif slen == 4 and bits >= 0x80000000 and bits in self.provided_symbols:
+                byte_str = self.provided_symbols[bits]
             else:
-                byte_str = self.provided_symbols.get(bits, '0x{0:0{1}X}'.format(bits, 2 * slen))
+                byte_str = '0x{0:0{1}X}'.format(bits, 2 * slen)
 
             if sym_type in ["float", "double"]:
                 if sym_type == "float":
@@ -539,7 +548,7 @@ class N64SegCode(N64Segment):
             self.warn("No symbol accesses detected for " + split_file["name"] + "; the output will most likely be an ugly blob")
 
         # check beginning
-        if syms[0][0] != split_file["vram"]:
+        if len(syms) == 0 or syms[0][0] != split_file["vram"]:
             syms.insert(0, (split_file["vram"], None))
 
         # add end
@@ -553,7 +562,7 @@ class N64SegCode(N64Segment):
             end = syms[i + 1][0]
             sym_rom_start = start - split_file["vram"] + split_file["start"]
             sym_rom_end = end - split_file["vram"] + split_file["start"]
-            sym_name = self.get_symbol_name(start, sym_rom_start)
+            sym_name = self.get_symbol_name(start, sym_rom_start, is_data=True)
             sym_str = f"\n\nglabel {sym_name}\n"
             sym_bytes = rom_bytes[sym_rom_start : sym_rom_end]
 
@@ -583,7 +592,7 @@ class N64SegCode(N64Segment):
                 stype = "short"
             else:
                 stype = "byte"
-            
+
             if not rodata_encountered and mnemonic == "jtbl":
                 rodata_encountered = True
                 ret += "\n\n\n.section .rodata"

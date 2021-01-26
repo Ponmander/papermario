@@ -43,8 +43,8 @@ glabel func_80238B3C_70462C
 /* 7046C4 80238BD4 0040182D */  daddu     $v1, $v0, $zero
 /* 7046C8 80238BD8 8C64000C */  lw        $a0, 0xc($v1)
 /* 7046CC 80238BDC 24020002 */  addiu     $v0, $zero, 2
-/* 7046D0 80238BE0 3C018024 */  lui       $at, %hi(D_8023C1B4)
-/* 7046D4 80238BE4 AC23C1B4 */  sw        $v1, %lo(D_8023C1B4)($at)
+/* 7046D0 80238BE0 3C018024 */  lui       $at, %hi(D_8023C1B4_707CA4)
+/* 7046D4 80238BE4 AC23C1B4 */  sw        $v1, %lo(D_8023C1B4_707CA4)($at)
 /* 7046D8 80238BE8 0040182D */  daddu     $v1, $v0, $zero
 /* 7046DC 80238BEC AC830030 */  sw        $v1, 0x30($a0)
 /* 7046E0 80238BF0 8FBF0024 */  lw        $ra, 0x24($sp)

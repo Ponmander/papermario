@@ -16,9 +16,9 @@ glabel func_80240330_EDC310
 /* EDC33C 8024035C 0200202D */  daddu     $a0, $s0, $zero
 /* EDC340 80240360 00431024 */  and       $v0, $v0, $v1
 /* EDC344 80240364 00021140 */  sll       $v0, $v0, 5
-/* EDC348 80240368 3C068009 */  lui       $a2, %hi(D_8008D2C0)
+/* EDC348 80240368 3C068009 */  lui       $a2, %hi(D_8008D2C0_D292A0)
 /* EDC34C 8024036C 00C23021 */  addu      $a2, $a2, $v0
-/* EDC350 80240370 8CC6D2C0 */  lw        $a2, %lo(D_8008D2C0)($a2)
+/* EDC350 80240370 8CC6D2C0 */  lw        $a2, %lo(D_8008D2C0_D292A0)($a2)
 /* EDC354 80240374 0C0B551A */  jal       func_802D5468
 /* EDC358 80240378 0220282D */   daddu    $a1, $s1, $zero
 /* EDC35C 8024037C 8FBF0018 */  lw        $ra, 0x18($sp)

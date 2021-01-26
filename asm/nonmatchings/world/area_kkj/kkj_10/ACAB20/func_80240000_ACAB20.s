@@ -3,8 +3,8 @@
 
 glabel func_80240000_ACAB20
 /* ACAB20 80240000 0000202D */  daddu     $a0, $zero, $zero
-/* ACAB24 80240004 3C058015 */  lui       $a1, %hi(D_80151328)
-/* ACAB28 80240008 24A51328 */  addiu     $a1, $a1, %lo(D_80151328)
+/* ACAB24 80240004 3C058015 */  lui       $a1, %hi(D_80151328_9DBE48)
+/* ACAB28 80240008 24A51328 */  addiu     $a1, $a1, %lo(D_80151328_9DBE48)
 /* ACAB2C 8024000C 0080182D */  daddu     $v1, $a0, $zero
 .L80240010:
 /* ACAB30 80240010 8CA20000 */  lw        $v0, ($a1)

@@ -51,8 +51,8 @@ glabel func_80241B34_DF8534
 /* DF85E4 80241BE4 10600017 */  beqz      $v1, .L80241C44
 /* DF85E8 80241BE8 0000B02D */   daddu    $s6, $zero, $zero
 /* DF85EC 80241BEC 00041080 */  sll       $v0, $a0, 2
-/* DF85F0 80241BF0 3C098025 */  lui       $t1, %hi(D_8024E8C0)
-/* DF85F4 80241BF4 2529E8C0 */  addiu     $t1, $t1, %lo(D_8024E8C0)
+/* DF85F0 80241BF0 3C098025 */  lui       $t1, %hi(D_8024E8C0_E052C0)
+/* DF85F4 80241BF4 2529E8C0 */  addiu     $t1, $t1, %lo(D_8024E8C0_E052C0)
 /* DF85F8 80241BF8 00491021 */  addu      $v0, $v0, $t1
 /* DF85FC 80241BFC 8C420000 */  lw        $v0, ($v0)
 /* DF8600 80241C00 00400008 */  jr        $v0

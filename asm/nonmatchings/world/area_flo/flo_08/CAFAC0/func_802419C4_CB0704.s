@@ -7,8 +7,8 @@ glabel func_802419C4_CB0704
 /* CB070C 802419CC 8C82000C */  lw        $v0, 0xc($a0)
 /* CB0710 802419D0 0C0B1EAF */  jal       get_variable
 /* CB0714 802419D4 8C450000 */   lw       $a1, ($v0)
-/* CB0718 802419D8 3C018024 */  lui       $at, %hi(D_8024308C)
-/* CB071C 802419DC AC22308C */  sw        $v0, %lo(D_8024308C)($at)
+/* CB0718 802419D8 3C018024 */  lui       $at, %hi(D_8024308C_CB1DCC)
+/* CB071C 802419DC AC22308C */  sw        $v0, %lo(D_8024308C_CB1DCC)($at)
 /* CB0720 802419E0 24020002 */  addiu     $v0, $zero, 2
 /* CB0724 802419E4 8FBF0010 */  lw        $ra, 0x10($sp)
 /* CB0728 802419E8 24030001 */  addiu     $v1, $zero, 1

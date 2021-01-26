@@ -8,8 +8,8 @@ glabel func_802A9720_42A440
 /* 42A44C 802A972C AFBF0014 */  sw        $ra, 0x14($sp)
 /* 42A450 802A9730 0C05271B */  jal       stop_sound
 /* 42A454 802A9734 AFB00010 */   sw       $s0, 0x10($sp)
-/* 42A458 802A9738 3C10802A */  lui       $s0, %hi(D_8029FBE0)
-/* 42A45C 802A973C 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0)
+/* 42A458 802A9738 3C10802A */  lui       $s0, %hi(D_8029FBE0_420900)
+/* 42A45C 802A973C 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0_420900)
 /* 42A460 802A9740 0C05123D */  jal       free_icon
 /* 42A464 802A9744 8E040004 */   lw       $a0, 4($s0)
 /* 42A468 802A9748 0C05123D */  jal       free_icon

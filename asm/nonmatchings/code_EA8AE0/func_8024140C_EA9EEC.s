@@ -16,8 +16,8 @@ glabel func_8024140C_EA9EEC
 /* EA9F18 80241438 2402FFFF */  addiu     $v0, $zero, -1
 /* EA9F1C 8024143C 3C058024 */  lui       $a1, %hi(func_802413C0_EA9EA0)
 /* EA9F20 80241440 24A513C0 */  addiu     $a1, $a1, %lo(func_802413C0_EA9EA0)
-/* EA9F24 80241444 3C018025 */  lui       $at, %hi(D_80248380)
-/* EA9F28 80241448 AC228380 */  sw        $v0, %lo(D_80248380)($at)
+/* EA9F24 80241444 3C018025 */  lui       $at, %hi(D_80248380_EB0E60)
+/* EA9F28 80241448 AC228380 */  sw        $v0, %lo(D_80248380_EB0E60)($at)
 /* EA9F2C 8024144C 0C04B7FA */  jal       func_8012DFE8
 /* EA9F30 80241450 0000202D */   daddu    $a0, $zero, $zero
 /* EA9F34 80241454 8FBF0014 */  lw        $ra, 0x14($sp)

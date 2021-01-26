@@ -50,8 +50,8 @@ glabel func_80240B5C_ACEC9C
 /* ACED50 80240C10 E7A00020 */  swc1      $f0, 0x20($sp)
 /* ACED54 80240C14 0C00A7E7 */  jal       add_vec2D_polar
 /* ACED58 80240C18 E7A20024 */   swc1     $f2, 0x24($sp)
-/* ACED5C 80240C1C 3C038015 */  lui       $v1, %hi(D_80151328)
-/* ACED60 80240C20 8C631328 */  lw        $v1, %lo(D_80151328)($v1)
+/* ACED5C 80240C1C 3C038015 */  lui       $v1, %hi(D_80151328_9DF468)
+/* ACED60 80240C20 8C631328 */  lw        $v1, %lo(D_80151328_9DF468)($v1)
 /* ACED64 80240C24 C7A00020 */  lwc1      $f0, 0x20($sp)
 /* ACED68 80240C28 3C0141A0 */  lui       $at, 0x41a0
 /* ACED6C 80240C2C 44811000 */  mtc1      $at, $f2
@@ -94,8 +94,8 @@ glabel func_80240B5C_ACEC9C
 /* ACEDFC 80240CBC 3C014059 */  lui       $at, 0x4059
 /* ACEE00 80240CC0 44811800 */  mtc1      $at, $f3
 /* ACEE04 80240CC4 44801000 */  mtc1      $zero, $f2
-/* ACEE08 80240CC8 3C018024 */  lui       $at, %hi(D_80245F40)
-/* ACEE0C 80240CCC D4245F40 */  ldc1      $f4, %lo(D_80245F40)($at)
+/* ACEE08 80240CC8 3C018024 */  lui       $at, %hi(D_80245F40_AD4080)
+/* ACEE0C 80240CCC D4245F40 */  ldc1      $f4, %lo(D_80245F40_AD4080)($at)
 /* ACEE10 80240CD0 46220003 */  div.d     $f0, $f0, $f2
 /* ACEE14 80240CD4 46240000 */  add.d     $f0, $f0, $f4
 /* ACEE18 80240CD8 C7A20020 */  lwc1      $f2, 0x20($sp)

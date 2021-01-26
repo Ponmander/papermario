@@ -117,3 +117,14 @@ D_00E62370 = 0x00E62370;
 D_00E62AC0 = 0x00E62AC0;
 D_00E639C0 = 0x00E639C0;
 D_00E648D0 = 0x00E648D0;
+
+D_800B42E0 = 0x800B42E0;
+pause_badges_count_equipped = 0x802470B0;
+pause_badges_is_visible = 0x80247270;
+pause_items_handle_input = 0x8024A7D8;
+pause_stats_draw_contents = 0x80245980;
+pause_tabs_draw_invis = 0x80244B90;
+pause_tabs_draw_items = 0x80244DE8;
+switch_order = 0x80243918;
+update_end_player_turn = 0x80242BB0;
+update_player_action = 0x80245AD0;

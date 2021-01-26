@@ -11,8 +11,8 @@ glabel func_802B6000_E2A340
 /* E2A358 802B6018 AFB00018 */  sw        $s0, 0x18($sp)
 /* E2A35C 802B601C F7B40028 */  sdc1      $f20, 0x28($sp)
 /* E2A360 802B6020 8E230000 */  lw        $v1, ($s1)
-/* E2A364 802B6024 3C128011 */  lui       $s2, %hi(D_8010C934)
-/* E2A368 802B6028 8E52C934 */  lw        $s2, %lo(D_8010C934)($s2)
+/* E2A364 802B6024 3C128011 */  lui       $s2, %hi(D_8010C934_C80C74)
+/* E2A368 802B6028 8E52C934 */  lw        $s2, %lo(D_8010C934_C80C74)($s2)
 /* E2A36C 802B602C 0461002F */  bgez      $v1, .L802B60EC
 /* E2A370 802B6030 3C027FFF */   lui      $v0, 0x7fff
 /* E2A374 802B6034 3442FFFF */  ori       $v0, $v0, 0xffff
@@ -169,8 +169,8 @@ glabel func_802B6000_E2A340
 /* E2A5B8 802B6278 8E020000 */  lw        $v0, ($s0)
 /* E2A5BC 802B627C E62000A8 */  swc1      $f0, 0xa8($s1)
 /* E2A5C0 802B6280 C4400014 */  lwc1      $f0, 0x14($v0)
-/* E2A5C4 802B6284 3C01802B */  lui       $at, %hi(D_802B6360)
-/* E2A5C8 802B6288 D4226360 */  ldc1      $f2, %lo(D_802B6360)($at)
+/* E2A5C4 802B6284 3C01802B */  lui       $at, %hi(D_802B6360_E2A6A0)
+/* E2A5C8 802B6288 D4226360 */  ldc1      $f2, %lo(D_802B6360_E2A6A0)($at)
 /* E2A5CC 802B628C 46000021 */  cvt.d.s   $f0, $f0
 /* E2A5D0 802B6290 46220000 */  add.d     $f0, $f0, $f2
 /* E2A5D4 802B6294 3C014220 */  lui       $at, 0x4220
@@ -197,8 +197,8 @@ glabel func_802B6000_E2A340
 .L802B62E4:
 /* E2A624 802B62E4 0C038039 */  jal       disable_player_shadow
 /* E2A628 802B62E8 00000000 */   nop
-/* E2A62C 802B62EC 3C048011 */  lui       $a0, %hi(D_8010C930)
-/* E2A630 802B62F0 8C84C930 */  lw        $a0, %lo(D_8010C930)($a0)
+/* E2A62C 802B62EC 3C048011 */  lui       $a0, %hi(D_8010C930_C80C70)
+/* E2A630 802B62F0 8C84C930 */  lw        $a0, %lo(D_8010C930_C80C70)($a0)
 /* E2A634 802B62F4 0C00EAFF */  jal       disable_npc_shadow
 /* E2A638 802B62F8 00000000 */   nop
 /* E2A63C 802B62FC 24020032 */  addiu     $v0, $zero, 0x32

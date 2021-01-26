@@ -20,8 +20,8 @@ glabel func_80240000_BDD1B0
 /* BDD1EC 8024003C 0040882D */  daddu     $s1, $v0, $zero
 /* BDD1F0 80240040 3C03800B */  lui       $v1, %hi(gCameras)
 /* BDD1F4 80240044 24631D80 */  addiu     $v1, $v1, %lo(gCameras)
-/* BDD1F8 80240048 3C02800A */  lui       $v0, %hi(D_8009A634)
-/* BDD1FC 8024004C 8442A634 */  lh        $v0, %lo(D_8009A634)($v0)
+/* BDD1F8 80240048 3C02800A */  lui       $v0, %hi(D_8009A634_A377E4)
+/* BDD1FC 8024004C 8442A634 */  lh        $v0, %lo(D_8009A634_A377E4)($v0)
 /* BDD200 80240050 0000282D */  daddu     $a1, $zero, $zero
 /* BDD204 80240054 00028080 */  sll       $s0, $v0, 2
 /* BDD208 80240058 02028021 */  addu      $s0, $s0, $v0
@@ -60,8 +60,8 @@ glabel func_80240000_BDD1B0
 /* BDD288 802400D8 0C00A70A */  jal       get_clamped_angle_diff
 /* BDD28C 802400DC 46000386 */   mov.s    $f14, $f0
 /* BDD290 802400E0 46000005 */  abs.s     $f0, $f0
-/* BDD294 802400E4 3C018024 */  lui       $at, %hi(D_80241AE8)
-/* BDD298 802400E8 D4221AE8 */  ldc1      $f2, %lo(D_80241AE8)($at)
+/* BDD294 802400E4 3C018024 */  lui       $at, %hi(D_80241AE8_BDEC98)
+/* BDD298 802400E8 D4221AE8 */  ldc1      $f2, %lo(D_80241AE8_BDEC98)($at)
 /* BDD29C 802400EC 46000021 */  cvt.d.s   $f0, $f0
 /* BDD2A0 802400F0 4620103C */  c.lt.d    $f2, $f0
 /* BDD2A4 802400F4 00000000 */  nop
@@ -80,8 +80,8 @@ glabel func_80240000_BDD1B0
 /* BDD2D4 80240124 45030001 */  bc1tl     .L8024012C
 /* BDD2D8 80240128 0000802D */   daddu    $s0, $zero, $zero
 .L8024012C:
-/* BDD2DC 8024012C 3C038011 */  lui       $v1, %hi(D_8010EBB3)
-/* BDD2E0 80240130 8063EBB3 */  lb        $v1, %lo(D_8010EBB3)($v1)
+/* BDD2DC 8024012C 3C038011 */  lui       $v1, %hi(D_8010EBB3_AABD63)
+/* BDD2E0 80240130 8063EBB3 */  lb        $v1, %lo(D_8010EBB3_AABD63)($v1)
 /* BDD2E4 80240134 24020009 */  addiu     $v0, $zero, 9
 /* BDD2E8 80240138 50620001 */  beql      $v1, $v0, .L80240140
 /* BDD2EC 8024013C 0000802D */   daddu    $s0, $zero, $zero

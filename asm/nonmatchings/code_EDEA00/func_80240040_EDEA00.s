@@ -22,8 +22,8 @@ glabel func_80240040_EDEA00
 /* EDEA44 80240084 0200202D */  daddu     $a0, $s0, $zero
 /* EDEA48 80240088 0C00F94D */  jal       func_8003E534
 /* EDEA4C 8024008C 0040A02D */   daddu    $s4, $v0, $zero
-/* EDEA50 80240090 3C138011 */  lui       $s3, %hi(D_80117840)
-/* EDEA54 80240094 26737840 */  addiu     $s3, $s3, %lo(D_80117840)
+/* EDEA50 80240090 3C138011 */  lui       $s3, %hi(D_80117840_DB6200)
+/* EDEA54 80240094 26737840 */  addiu     $s3, $s3, %lo(D_80117840_DB6200)
 /* EDEA58 80240098 12200006 */  beqz      $s1, .L802400B4
 /* EDEA5C 8024009C 0040802D */   daddu    $s0, $v0, $zero
 /* EDEA60 802400A0 82620012 */  lb        $v0, 0x12($s3)

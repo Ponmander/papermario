@@ -13,8 +13,8 @@ glabel func_802A137C_78EB4C
 /* 78EB6C 802A139C 0080282D */  daddu     $a1, $a0, $zero
 /* 78EB70 802A13A0 0080302D */  daddu     $a2, $a0, $zero
 /* 78EB74 802A13A4 0080382D */  daddu     $a3, $a0, $zero
-/* 78EB78 802A13A8 3C038015 */  lui       $v1, %hi(D_801512F0)
-/* 78EB7C 802A13AC 8C6312F0 */  lw        $v1, %lo(D_801512F0)($v1)
+/* 78EB78 802A13A8 3C038015 */  lui       $v1, %hi(D_801512F0_63EAC0)
+/* 78EB7C 802A13AC 8C6312F0 */  lw        $v1, %lo(D_801512F0_63EAC0)($v1)
 /* 78EB80 802A13B0 24020001 */  addiu     $v0, $zero, 1
 /* 78EB84 802A13B4 0C046F97 */  jal       set_background_color_blend
 /* 78EB88 802A13B8 A0620000 */   sb       $v0, ($v1)

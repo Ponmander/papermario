@@ -57,8 +57,8 @@ glabel func_802406A4_C52BE4
 /* C52CAC 8024076C 24020002 */  addiu     $v0, $zero, 2
 /* C52CB0 80240770 14620007 */  bne       $v1, $v0, .L80240790
 /* C52CB4 80240774 24020001 */   addiu    $v0, $zero, 1
-/* C52CB8 80240778 3C028011 */  lui       $v0, %hi(D_8010EBB0)
-/* C52CBC 8024077C 8042EBB0 */  lb        $v0, %lo(D_8010EBB0)($v0)
+/* C52CB8 80240778 3C028011 */  lui       $v0, %hi(D_8010EBB0_B210F0)
+/* C52CBC 8024077C 8042EBB0 */  lb        $v0, %lo(D_8010EBB0_B210F0)($v0)
 /* C52CC0 80240780 50430002 */  beql      $v0, $v1, .L8024078C
 /* C52CC4 80240784 24120001 */   addiu    $s2, $zero, 1
 .L80240788:
@@ -68,16 +68,16 @@ glabel func_802406A4_C52BE4
 .L80240790:
 /* C52CD0 80240790 14620006 */  bne       $v1, $v0, .L802407AC
 /* C52CD4 80240794 24020003 */   addiu    $v0, $zero, 3
-/* C52CD8 80240798 3C028011 */  lui       $v0, %hi(D_8010EBB0)
-/* C52CDC 8024079C 8042EBB0 */  lb        $v0, %lo(D_8010EBB0)($v0)
+/* C52CD8 80240798 3C028011 */  lui       $v0, %hi(D_8010EBB0_B210F0)
+/* C52CDC 8024079C 8042EBB0 */  lb        $v0, %lo(D_8010EBB0_B210F0)($v0)
 /* C52CE0 802407A0 14400008 */  bnez      $v0, .L802407C4
 /* C52CE4 802407A4 27A40028 */   addiu    $a0, $sp, 0x28
 /* C52CE8 802407A8 24020003 */  addiu     $v0, $zero, 3
 .L802407AC:
 /* C52CEC 802407AC 1462001B */  bne       $v1, $v0, .L8024081C
 /* C52CF0 802407B0 24020002 */   addiu    $v0, $zero, 2
-/* C52CF4 802407B4 3C038011 */  lui       $v1, %hi(D_8010EBB0)
-/* C52CF8 802407B8 8063EBB0 */  lb        $v1, %lo(D_8010EBB0)($v1)
+/* C52CF4 802407B4 3C038011 */  lui       $v1, %hi(D_8010EBB0_B210F0)
+/* C52CF8 802407B8 8063EBB0 */  lb        $v1, %lo(D_8010EBB0_B210F0)($v1)
 /* C52CFC 802407BC 14620017 */  bne       $v1, $v0, .L8024081C
 /* C52D00 802407C0 27A40028 */   addiu    $a0, $sp, 0x28
 .L802407C4:
@@ -89,8 +89,8 @@ glabel func_802406A4_C52BE4
 /* C52D18 802407D8 E7A00028 */  swc1      $f0, 0x28($sp)
 /* C52D1C 802407DC 0C00A7E7 */  jal       add_vec2D_polar
 /* C52D20 802407E0 E7A2002C */   swc1     $f2, 0x2c($sp)
-/* C52D24 802407E4 3C028011 */  lui       $v0, %hi(D_8010C930)
-/* C52D28 802407E8 8C42C930 */  lw        $v0, %lo(D_8010C930)($v0)
+/* C52D24 802407E4 3C028011 */  lui       $v0, %hi(D_8010C930_B1EE70)
+/* C52D28 802407E8 8C42C930 */  lw        $v0, %lo(D_8010C930_B1EE70)($v0)
 /* C52D2C 802407EC C7AC0028 */  lwc1      $f12, 0x28($sp)
 /* C52D30 802407F0 C7AE002C */  lwc1      $f14, 0x2c($sp)
 /* C52D34 802407F4 8C460038 */  lw        $a2, 0x38($v0)

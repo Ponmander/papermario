@@ -12,7 +12,7 @@ glabel func_80240C9C_CEEEFC
 /* CEEF14 80240CB4 2484FFFF */  addiu     $a0, $a0, -1
 /* CEEF18 80240CB8 0481FFFC */  bgez      $a0, .L80240CAC
 /* CEEF1C 80240CBC 2442FFFF */   addiu    $v0, $v0, -1
-/* CEEF20 80240CC0 3C018024 */  lui       $at, %hi(D_802429BC)
-/* CEEF24 80240CC4 AC2029BC */  sw        $zero, %lo(D_802429BC)($at)
+/* CEEF20 80240CC0 3C018024 */  lui       $at, %hi(D_802429BC_CF0C1C)
+/* CEEF24 80240CC4 AC2029BC */  sw        $zero, %lo(D_802429BC_CF0C1C)($at)
 /* CEEF28 80240CC8 03E00008 */  jr        $ra
 /* CEEF2C 80240CCC 24020002 */   addiu    $v0, $zero, 2

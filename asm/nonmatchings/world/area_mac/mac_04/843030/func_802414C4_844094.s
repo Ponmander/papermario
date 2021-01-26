@@ -9,8 +9,8 @@ glabel func_802414C4_844094
 /* 8440A4 802414D4 0C048C8F */  jal       bind_dynamic_entity_7
 /* 8440A8 802414D8 0000202D */   daddu    $a0, $zero, $zero
 /* 8440AC 802414DC 8FBF0010 */  lw        $ra, 0x10($sp)
-/* 8440B0 802414E0 3C018025 */  lui       $at, %hi(D_8024F5A0)
-/* 8440B4 802414E4 AC22F5A0 */  sw        $v0, %lo(D_8024F5A0)($at)
+/* 8440B0 802414E0 3C018025 */  lui       $at, %hi(D_8024F5A0_852170)
+/* 8440B4 802414E4 AC22F5A0 */  sw        $v0, %lo(D_8024F5A0_852170)($at)
 /* 8440B8 802414E8 24020002 */  addiu     $v0, $zero, 2
 /* 8440BC 802414EC 03E00008 */  jr        $ra
 /* 8440C0 802414F0 27BD0018 */   addiu    $sp, $sp, 0x18

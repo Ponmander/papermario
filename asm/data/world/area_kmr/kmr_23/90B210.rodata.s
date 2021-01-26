@@ -1,0 +1,9 @@
+.include "macro.inc"
+
+.section .rodata
+
+glabel D_802437E0_90B210
+.byte 0x6B, 0x7A, 0x6E, 0x5F, 0x31, 0x39, 0x00, 0x00, 0x6B, 0x6D, 0x72, 0x5F, 0x32, 0x34, 0x00, 0x00
+
+glabel jtbl_802437F0_90B220
+.word L80240DF8_908828, L80240E0C_90883C, L80240E6C_90889C, L80240E80_9088B0, L80240ED8_908908, 0, 0, 0

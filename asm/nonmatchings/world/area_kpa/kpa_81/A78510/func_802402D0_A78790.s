@@ -7,8 +7,8 @@ glabel func_802402D0_A78790
 /* A78798 802402D8 8C82000C */  lw        $v0, 0xc($a0)
 /* A7879C 802402DC 0C0B1EAF */  jal       get_variable
 /* A787A0 802402E0 8C450000 */   lw       $a1, ($v0)
-/* A787A4 802402E4 3C018024 */  lui       $at, %hi(D_80240D9C)
-/* A787A8 802402E8 AC220D9C */  sw        $v0, %lo(D_80240D9C)($at)
+/* A787A4 802402E4 3C018024 */  lui       $at, %hi(D_80240D9C_A7925C)
+/* A787A8 802402E8 AC220D9C */  sw        $v0, %lo(D_80240D9C_A7925C)($at)
 /* A787AC 802402EC 24020002 */  addiu     $v0, $zero, 2
 /* A787B0 802402F0 8FBF0010 */  lw        $ra, 0x10($sp)
 /* A787B4 802402F4 24030001 */  addiu     $v1, $zero, 1

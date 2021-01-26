@@ -4,8 +4,8 @@
 glabel func_802A959C_4260EC
 /* 4260EC 802A959C 27BDFFE8 */  addiu     $sp, $sp, -0x18
 /* 4260F0 802A95A0 AFB00010 */  sw        $s0, 0x10($sp)
-/* 4260F4 802A95A4 3C10802A */  lui       $s0, %hi(D_8029FBE0)
-/* 4260F8 802A95A8 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0)
+/* 4260F4 802A95A4 3C10802A */  lui       $s0, %hi(D_8029FBE0_41C730)
+/* 4260F8 802A95A8 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0_41C730)
 /* 4260FC 802A95AC AFBF0014 */  sw        $ra, 0x14($sp)
 /* 426100 802A95B0 0C05123D */  jal       free_icon
 /* 426104 802A95B4 8E040004 */   lw       $a0, 4($s0)

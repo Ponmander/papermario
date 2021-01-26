@@ -12,7 +12,7 @@ glabel func_802406A8_A39B88
 /* A39BA4 802406C4 24020002 */  addiu     $v0, $zero, 2
 /* A39BA8 802406C8 8FBF0010 */  lw        $ra, 0x10($sp)
 /* A39BAC 802406CC 24030001 */  addiu     $v1, $zero, 1
-/* A39BB0 802406D0 3C018024 */  lui       $at, %hi(D_80242C6C)
-/* A39BB4 802406D4 AC232C6C */  sw        $v1, %lo(D_80242C6C)($at)
+/* A39BB0 802406D0 3C018024 */  lui       $at, %hi(D_80242C6C_A3C14C)
+/* A39BB4 802406D4 AC232C6C */  sw        $v1, %lo(D_80242C6C_A3C14C)($at)
 /* A39BB8 802406D8 03E00008 */  jr        $ra
 /* A39BBC 802406DC 27BD0018 */   addiu    $sp, $sp, 0x18

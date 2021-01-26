@@ -35,8 +35,8 @@ glabel func_80240E84_EDF844
 /* EDF8BC 80240EFC E6200014 */  swc1      $f0, 0x14($s1)
 /* EDF8C0 80240F00 AE220028 */  sw        $v0, 0x28($s1)
 /* EDF8C4 80240F04 C6000018 */  lwc1      $f0, 0x18($s0)
-/* EDF8C8 80240F08 3C028010 */  lui       $v0, %hi(D_800FFC90)
-/* EDF8CC 80240F0C 8C42FC90 */  lw        $v0, %lo(D_800FFC90)($v0)
+/* EDF8C8 80240F08 3C028010 */  lui       $v0, %hi(D_800FFC90_D9E650)
+/* EDF8CC 80240F0C 8C42FC90 */  lw        $v0, %lo(D_800FFC90_D9E650)($v0)
 /* EDF8D0 80240F10 E6200018 */  swc1      $f0, 0x18($s1)
 /* EDF8D4 80240F14 8C460028 */  lw        $a2, 0x28($v0)
 /* EDF8D8 80240F18 0C00ABDC */  jal       fio_validate_header_checksums

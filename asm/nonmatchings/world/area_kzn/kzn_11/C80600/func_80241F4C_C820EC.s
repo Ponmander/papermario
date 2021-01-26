@@ -30,8 +30,8 @@ glabel func_80241F4C_C820EC
 /* C82150 80241FB0 2404FFFC */   addiu    $a0, $zero, -4
 /* C82154 80241FB4 3C138011 */  lui       $s3, %hi(gPlayerStatus)
 /* C82158 80241FB8 2673EFC8 */  addiu     $s3, $s3, %lo(gPlayerStatus)
-/* C8215C 80241FBC 3C168011 */  lui       $s6, %hi(D_8010EBB0)
-/* C82160 80241FC0 26D6EBB0 */  addiu     $s6, $s6, %lo(D_8010EBB0)
+/* C8215C 80241FBC 3C168011 */  lui       $s6, %hi(D_8010EBB0_B4ED50)
+/* C82160 80241FC0 26D6EBB0 */  addiu     $s6, $s6, %lo(D_8010EBB0_B4ED50)
 /* C82164 80241FC4 1200001C */  beqz      $s0, .L80242038
 /* C82168 80241FC8 0040B82D */   daddu    $s7, $v0, $zero
 /* C8216C 80241FCC 0C00AB39 */  jal       heap_malloc
@@ -228,9 +228,9 @@ glabel func_80241F4C_C820EC
 /* C82444 802422A4 E6040028 */  swc1      $f4, 0x28($s0)
 /* C82448 802422A8 00021080 */  sll       $v0, $v0, 2
 /* C8244C 802422AC E7A00010 */  swc1      $f0, 0x10($sp)
-/* C82450 802422B0 3C048024 */  lui       $a0, %hi(D_802437B4)
+/* C82450 802422B0 3C048024 */  lui       $a0, %hi(D_802437B4_C83954)
 /* C82454 802422B4 00822021 */  addu      $a0, $a0, $v0
-/* C82458 802422B8 8C8437B4 */  lw        $a0, %lo(D_802437B4)($a0)
+/* C82458 802422B8 8C8437B4 */  lw        $a0, %lo(D_802437B4_C83954)($a0)
 /* C8245C 802422BC 8E060004 */  lw        $a2, 4($s0)
 /* C82460 802422C0 8E070008 */  lw        $a3, 8($s0)
 /* C82464 802422C4 0C052757 */  jal       play_sound_at_position

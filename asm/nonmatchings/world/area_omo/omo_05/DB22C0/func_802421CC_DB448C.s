@@ -12,7 +12,7 @@ glabel func_802421CC_DB448C
 /* DB44A8 802421E8 24020002 */  addiu     $v0, $zero, 2
 /* DB44AC 802421EC 8FBF0010 */  lw        $ra, 0x10($sp)
 /* DB44B0 802421F0 24030001 */  addiu     $v1, $zero, 1
-/* DB44B4 802421F4 3C018024 */  lui       $at, %hi(D_80243098)
-/* DB44B8 802421F8 AC233098 */  sw        $v1, %lo(D_80243098)($at)
+/* DB44B4 802421F4 3C018024 */  lui       $at, %hi(D_80243098_DB5358)
+/* DB44B8 802421F8 AC233098 */  sw        $v1, %lo(D_80243098_DB5358)($at)
 /* DB44BC 802421FC 03E00008 */  jr        $ra
 /* DB44C0 80242200 27BD0018 */   addiu    $sp, $sp, 0x18

@@ -60,8 +60,8 @@ glabel func_802B6000_E27C90
 /* E27D6C 802B60DC A4620002 */   sh       $v0, 2($v1)
 /* E27D70 802B60E0 86020016 */  lh        $v0, 0x16($s0)
 /* E27D74 802B60E4 8603001A */  lh        $v1, 0x1a($s0)
-/* E27D78 802B60E8 3C01802B */  lui       $at, %hi(D_802B62B0)
-/* E27D7C 802B60EC E42062B0 */  swc1      $f0, %lo(D_802B62B0)($at)
+/* E27D78 802B60E8 3C01802B */  lui       $at, %hi(D_802B62B0_E27F40)
+/* E27D7C 802B60EC E42062B0 */  swc1      $f0, %lo(D_802B62B0_E27F40)($at)
 /* E27D80 802B60F0 44826000 */  mtc1      $v0, $f12
 /* E27D84 802B60F4 00000000 */  nop
 /* E27D88 802B60F8 46806320 */  cvt.s.w   $f12, $f12
@@ -77,14 +77,14 @@ glabel func_802B6000_E27C90
 /* E27DB0 802B6120 E6000054 */   swc1     $f0, 0x54($s0)
 /* E27DB4 802B6124 0C03A5D8 */  jal       open_status_menu_long
 /* E27DB8 802B6128 00000000 */   nop
-/* E27DBC 802B612C 3C03800A */  lui       $v1, %hi(D_8009A650)
-/* E27DC0 802B6130 2463A650 */  addiu     $v1, $v1, %lo(D_8009A650)
+/* E27DBC 802B612C 3C03800A */  lui       $v1, %hi(D_8009A650_C0C2E0)
+/* E27DC0 802B6130 2463A650 */  addiu     $v1, $v1, %lo(D_8009A650_C0C2E0)
 /* E27DC4 802B6134 8C620000 */  lw        $v0, ($v1)
 /* E27DC8 802B6138 34420040 */  ori       $v0, $v0, 0x40
 /* E27DCC 802B613C AC620000 */  sw        $v0, ($v1)
 .L802B6140:
-/* E27DD0 802B6140 3C01802B */  lui       $at, %hi(D_802B62B0)
-/* E27DD4 802B6144 C42C62B0 */  lwc1      $f12, %lo(D_802B62B0)($at)
+/* E27DD0 802B6140 3C01802B */  lui       $at, %hi(D_802B62B0_E27F40)
+/* E27DD4 802B6144 C42C62B0 */  lwc1      $f12, %lo(D_802B62B0_E27F40)($at)
 /* E27DD8 802B6148 3C0140C9 */  lui       $at, 0x40c9
 /* E27DDC 802B614C 34210FD0 */  ori       $at, $at, 0xfd0
 /* E27DE0 802B6150 44810000 */  mtc1      $at, $f0
@@ -160,8 +160,8 @@ glabel func_802B6000_E27C90
 /* E27EF0 802B6260 2403F7FF */  addiu     $v1, $zero, -0x801
 /* E27EF4 802B6264 A6220010 */  sh        $v0, 0x10($s1)
 /* E27EF8 802B6268 8E220000 */  lw        $v0, ($s1)
-/* E27EFC 802B626C 3C04800A */  lui       $a0, %hi(D_8009A650)
-/* E27F00 802B6270 2484A650 */  addiu     $a0, $a0, %lo(D_8009A650)
+/* E27EFC 802B626C 3C04800A */  lui       $a0, %hi(D_8009A650_C0C2E0)
+/* E27F00 802B6270 2484A650 */  addiu     $a0, $a0, %lo(D_8009A650_C0C2E0)
 /* E27F04 802B6274 A22000BF */  sb        $zero, 0xbf($s1)
 /* E27F08 802B6278 00431024 */  and       $v0, $v0, $v1
 /* E27F0C 802B627C AE220000 */  sw        $v0, ($s1)

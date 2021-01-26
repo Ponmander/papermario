@@ -40,8 +40,8 @@ glabel func_802A1108_75CA88
 /* 75CB14 802A1194 AFA30014 */  sw        $v1, 0x14($sp)
 /* 75CB18 802A1198 0C01C634 */  jal       func_800718D0
 /* 75CB1C 802A119C E7A00010 */   swc1     $f0, 0x10($sp)
-/* 75CB20 802A11A0 3C04802A */  lui       $a0, %hi(D_802A2C50)
-/* 75CB24 802A11A4 24842C50 */  addiu     $a0, $a0, %lo(D_802A2C50)
+/* 75CB20 802A11A0 3C04802A */  lui       $a0, %hi(D_802A2C50_75E5D0)
+/* 75CB24 802A11A4 24842C50 */  addiu     $a0, $a0, %lo(D_802A2C50_75E5D0)
 /* 75CB28 802A11A8 3C10800E */  lui       $s0, %hi(gBattleStatus)
 /* 75CB2C 802A11AC 2610C070 */  addiu     $s0, $s0, %lo(gBattleStatus)
 /* 75CB30 802A11B0 AC800000 */  sw        $zero, ($a0)

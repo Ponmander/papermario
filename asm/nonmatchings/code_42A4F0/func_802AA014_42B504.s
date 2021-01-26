@@ -4,8 +4,8 @@
 glabel func_802AA014_42B504
 /* 42B504 802AA014 27BDFFE0 */  addiu     $sp, $sp, -0x20
 /* 42B508 802AA018 AFB00010 */  sw        $s0, 0x10($sp)
-/* 42B50C 802AA01C 3C10802A */  lui       $s0, %hi(D_8029FBE0)
-/* 42B510 802AA020 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0)
+/* 42B50C 802AA01C 3C10802A */  lui       $s0, %hi(D_8029FBE0_4210D0)
+/* 42B510 802AA020 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0_4210D0)
 /* 42B514 802AA024 AFBF0018 */  sw        $ra, 0x18($sp)
 /* 42B518 802AA028 AFB10014 */  sw        $s1, 0x14($sp)
 /* 42B51C 802AA02C 0C0511EA */  jal       draw_icon_0
@@ -32,9 +32,9 @@ glabel func_802AA014_42B504
 /* 42B570 802AA080 3C03800E */  lui       $v1, %hi(gBattleStatus+0x84)
 /* 42B574 802AA084 8063C0F4 */  lb        $v1, %lo(gBattleStatus+0x84)($v1)
 /* 42B578 802AA088 00031880 */  sll       $v1, $v1, 2
-/* 42B57C 802AA08C 3C05802B */  lui       $a1, %hi(D_802AB180)
+/* 42B57C 802AA08C 3C05802B */  lui       $a1, %hi(D_802AB180_42C670)
 /* 42B580 802AA090 00A32821 */  addu      $a1, $a1, $v1
-/* 42B584 802AA094 8CA5B180 */  lw        $a1, %lo(D_802AB180)($a1)
+/* 42B584 802AA094 8CA5B180 */  lw        $a1, %lo(D_802AB180_42C670)($a1)
 /* 42B588 802AA098 10450003 */  beq       $v0, $a1, .L802AA0A8
 /* 42B58C 802AA09C 00000000 */   nop
 /* 42B590 802AA0A0 0C0511FF */  jal       set_menu_icon_script

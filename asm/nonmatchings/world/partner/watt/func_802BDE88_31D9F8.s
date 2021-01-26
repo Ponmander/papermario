@@ -13,8 +13,8 @@ glabel func_802BDE88_31D9F8
 /* 31DA18 802BDEA8 AFB3001C */  sw        $s3, 0x1c($sp)
 /* 31DA1C 802BDEAC 0C00EABB */  jal       get_npc_unsafe
 /* 31DA20 802BDEB0 AFB20018 */   sw       $s2, 0x18($sp)
-/* 31DA24 802BDEB4 3C148011 */  lui       $s4, %hi(D_8010EBB0)
-/* 31DA28 802BDEB8 2694EBB0 */  addiu     $s4, $s4, %lo(D_8010EBB0)
+/* 31DA24 802BDEB4 3C148011 */  lui       $s4, %hi(D_8010EBB0_16E720)
+/* 31DA28 802BDEB8 2694EBB0 */  addiu     $s4, $s4, %lo(D_8010EBB0_16E720)
 /* 31DA2C 802BDEBC 3C138011 */  lui       $s3, %hi(gPlayerStatus)
 /* 31DA30 802BDEC0 2673EFC8 */  addiu     $s3, $s3, %lo(gPlayerStatus)
 /* 31DA34 802BDEC4 12000002 */  beqz      $s0, .L802BDED0
@@ -78,8 +78,8 @@ glabel func_802BDE88_31D9F8
 /* 31DB0C 802BDF9C 24020006 */  addiu     $v0, $zero, 6
 /* 31DB10 802BDFA0 A2820003 */  sb        $v0, 3($s4)
 /* 31DB14 802BDFA4 8E220070 */  lw        $v0, 0x70($s1)
-/* 31DB18 802BDFA8 3C01802C */  lui       $at, %hi(D_802BE308)
-/* 31DB1C 802BDFAC AC20E308 */  sw        $zero, %lo(D_802BE308)($at)
+/* 31DB18 802BDFA8 3C01802C */  lui       $at, %hi(D_802BE308_31DE78)
+/* 31DB1C 802BDFAC AC20E308 */  sw        $zero, %lo(D_802BE308_31DE78)($at)
 /* 31DB20 802BDFB0 24420001 */  addiu     $v0, $v0, 1
 /* 31DB24 802BDFB4 080AF7FC */  j         .L802BDFF0
 /* 31DB28 802BDFB8 AE220070 */   sw       $v0, 0x70($s1)

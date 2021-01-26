@@ -9,8 +9,8 @@ glabel func_802416FC_96A8BC
 /* 96A8CC 8024170C AFB3002C */  sw        $s3, 0x2c($sp)
 /* 96A8D0 80241710 AFB10024 */  sw        $s1, 0x24($sp)
 /* 96A8D4 80241714 AFB00020 */  sw        $s0, 0x20($sp)
-/* 96A8D8 80241718 3C018025 */  lui       $at, %hi(D_8024EFCC)
-/* 96A8DC 8024171C AC32EFCC */  sw        $s2, %lo(D_8024EFCC)($at)
+/* 96A8D8 80241718 3C018025 */  lui       $at, %hi(D_8024EFCC_97818C)
+/* 96A8DC 8024171C AC32EFCC */  sw        $s2, %lo(D_8024EFCC_97818C)($at)
 /* 96A8E0 80241720 0C04E9C1 */  jal       func_8013A704
 /* 96A8E4 80241724 24040001 */   addiu    $a0, $zero, 1
 /* 96A8E8 80241728 0040982D */  daddu     $s3, $v0, $zero

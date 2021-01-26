@@ -128,8 +128,8 @@ glabel func_802403F0_C6CD10
 /* C6CED4 802405B4 3C05FD05 */  lui       $a1, 0xfd05
 /* C6CED8 802405B8 0C0B210B */  jal       get_float_variable
 /* C6CEDC 802405BC 34A50F80 */   ori      $a1, $a1, 0xf80
-/* C6CEE0 802405C0 3C018024 */  lui       $at, %hi(D_80241A00)
-/* C6CEE4 802405C4 D4221A00 */  ldc1      $f2, %lo(D_80241A00)($at)
+/* C6CEE0 802405C0 3C018024 */  lui       $at, %hi(D_80241A00_C6E320)
+/* C6CEE4 802405C4 D4221A00 */  ldc1      $f2, %lo(D_80241A00_C6E320)($at)
 /* C6CEE8 802405C8 46000021 */  cvt.d.s   $f0, $f0
 /* C6CEEC 802405CC 46220002 */  mul.d     $f0, $f0, $f2
 /* C6CEF0 802405D0 00000000 */  nop

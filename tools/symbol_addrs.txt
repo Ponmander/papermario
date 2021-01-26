@@ -487,6 +487,7 @@ osContRamRead = 0x8006A1D0;
 osContRamWrite = 0x8006A3C0;
 osAfterPreNMI = 0x8006A630;
 osInitialize = 0x8006A708;
+func_8006A9F0 = 0x8006A708; // !
 osExceptionPreamble = 0x8006AA00;
 func_8006AA34 = 0x8006AA34; // !
 ai = 0x8006AD64;

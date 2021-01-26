@@ -44,8 +44,8 @@ glabel func_80240540_EFF040
 /* EFF0DC 802405DC 4600C002 */  mul.s     $f0, $f24, $f0
 /* EFF0E0 802405E0 00000000 */  nop
 /* EFF0E4 802405E4 46160000 */  add.s     $f0, $f0, $f22
-/* EFF0E8 802405E8 3C118011 */  lui       $s1, %hi(D_80117578)
-/* EFF0EC 802405EC 26317578 */  addiu     $s1, $s1, %lo(D_80117578)
+/* EFF0E8 802405E8 3C118011 */  lui       $s1, %hi(D_80117578_DD6078)
+/* EFF0EC 802405EC 26317578 */  addiu     $s1, $s1, %lo(D_80117578_DD6078)
 /* EFF0F0 802405F0 E6200028 */  swc1      $f0, 0x28($s1)
 /* EFF0F4 802405F4 8E0500AC */  lw        $a1, 0xac($s0)
 /* EFF0F8 802405F8 0C0B53A3 */  jal       func_802D4E8C

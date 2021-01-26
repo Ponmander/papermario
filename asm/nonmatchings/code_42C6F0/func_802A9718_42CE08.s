@@ -6,8 +6,8 @@ glabel func_802A9718_42CE08
 /* 42CE0C 802A971C AFB10014 */  sw        $s1, 0x14($sp)
 /* 42CE10 802A9720 24110001 */  addiu     $s1, $zero, 1
 /* 42CE14 802A9724 AFB00010 */  sw        $s0, 0x10($sp)
-/* 42CE18 802A9728 3C10802A */  lui       $s0, %hi(D_8029FBE4)
-/* 42CE1C 802A972C 2610FBE4 */  addiu     $s0, $s0, %lo(D_8029FBE4)
+/* 42CE18 802A9728 3C10802A */  lui       $s0, %hi(D_8029FBE4_4232D4)
+/* 42CE1C 802A972C 2610FBE4 */  addiu     $s0, $s0, %lo(D_8029FBE4_4232D4)
 /* 42CE20 802A9730 AFBF0018 */  sw        $ra, 0x18($sp)
 .L802A9734:
 /* 42CE24 802A9734 8E040004 */  lw        $a0, 4($s0)

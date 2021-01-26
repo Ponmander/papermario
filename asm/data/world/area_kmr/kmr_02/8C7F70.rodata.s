@@ -1,0 +1,12 @@
+.include "macro.inc"
+
+.section .rodata
+
+glabel D_80257F00_8C7F70
+.byte 0x74, 0x69, 0x6B, 0x5F, 0x30, 0x31, 0x00, 0x00
+
+glabel D_80257F08_8C7F78
+.double 990.0
+
+glabel D_80257F10_8C7F80
+.word 0x70617274, 0x795F6B75, 0x72696F00, 0x00000000

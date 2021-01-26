@@ -14,8 +14,8 @@ glabel func_80238E04_6F1EE4
 /* 6F1F08 80238E28 0C01C844 */  jal       func_80072110
 /* 6F1F0C 80238E2C E7A00010 */   swc1     $f0, 0x10($sp)
 /* 6F1F10 80238E30 8FBF0018 */  lw        $ra, 0x18($sp)
-/* 6F1F14 80238E34 3C018024 */  lui       $at, %hi(D_8023CDA0)
-/* 6F1F18 80238E38 AC22CDA0 */  sw        $v0, %lo(D_8023CDA0)($at)
+/* 6F1F14 80238E34 3C018024 */  lui       $at, %hi(D_8023CDA0_6F5E80)
+/* 6F1F18 80238E38 AC22CDA0 */  sw        $v0, %lo(D_8023CDA0_6F5E80)($at)
 /* 6F1F1C 80238E3C 24020002 */  addiu     $v0, $zero, 2
 /* 6F1F20 80238E40 03E00008 */  jr        $ra
 /* 6F1F24 80238E44 27BD0020 */   addiu    $sp, $sp, 0x20

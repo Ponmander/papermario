@@ -7,8 +7,8 @@ glabel func_802419F0_ECB6F0
 /* ECB6F8 802419F8 8C82000C */  lw        $v0, 0xc($a0)
 /* ECB6FC 802419FC 0C0B53A3 */  jal       func_802D4E8C
 /* ECB700 80241A00 8C450000 */   lw       $a1, ($v0)
-/* ECB704 80241A04 3C018024 */  lui       $at, %hi(D_802430BC)
-/* ECB708 80241A08 AC2230BC */  sw        $v0, %lo(D_802430BC)($at)
+/* ECB704 80241A04 3C018024 */  lui       $at, %hi(D_802430BC_ECCDBC)
+/* ECB708 80241A08 AC2230BC */  sw        $v0, %lo(D_802430BC_ECCDBC)($at)
 /* ECB70C 80241A0C 24020002 */  addiu     $v0, $zero, 2
 /* ECB710 80241A10 8FBF0010 */  lw        $ra, 0x10($sp)
 /* ECB714 80241A14 24030001 */  addiu     $v1, $zero, 1

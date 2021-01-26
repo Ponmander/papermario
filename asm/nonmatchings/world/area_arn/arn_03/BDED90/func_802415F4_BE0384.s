@@ -18,9 +18,9 @@ glabel func_802415F4_BE0384
 /* BE03B4 80241624 0000102D */   daddu    $v0, $zero, $zero
 .L80241628:
 /* BE03B8 80241628 8CC50000 */  lw        $a1, ($a2)
-/* BE03BC 8024162C 3C068024 */  lui       $a2, %hi(D_80241CD0)
+/* BE03BC 8024162C 3C068024 */  lui       $a2, %hi(D_80241CD0_BE0A60)
 /* BE03C0 80241630 0C0B2026 */  jal       set_variable
-/* BE03C4 80241634 8CC61CD0 */   lw       $a2, %lo(D_80241CD0)($a2)
+/* BE03C4 80241634 8CC61CD0 */   lw       $a2, %lo(D_80241CD0_BE0A60)($a2)
 /* BE03C8 80241638 24020002 */  addiu     $v0, $zero, 2
 .L8024163C:
 /* BE03CC 8024163C 8FBF0010 */  lw        $ra, 0x10($sp)

@@ -28,8 +28,8 @@ glabel func_80218BF8_4B1DE8
 /* 4B1E44 80218C54 0C0B1EAF */  jal       get_variable
 /* 4B1E48 80218C58 0040802D */   daddu    $s0, $v0, $zero
 /* 4B1E4C 80218C5C 24040006 */  addiu     $a0, $zero, 6
-/* 4B1E50 80218C60 3C058023 */  lui       $a1, %hi(D_802362D0)
-/* 4B1E54 80218C64 24A562D0 */  addiu     $a1, $a1, %lo(D_802362D0)
+/* 4B1E50 80218C60 3C058023 */  lui       $a1, %hi(D_802362D0_4CF4C0)
+/* 4B1E54 80218C64 24A562D0 */  addiu     $a1, $a1, %lo(D_802362D0_4CF4C0)
 /* 4B1E58 80218C68 44930000 */  mtc1      $s3, $f0
 /* 4B1E5C 80218C6C 00000000 */  nop
 /* 4B1E60 80218C70 46800020 */  cvt.s.w   $f0, $f0

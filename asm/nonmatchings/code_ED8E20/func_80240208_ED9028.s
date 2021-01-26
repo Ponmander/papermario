@@ -2,8 +2,8 @@
 .set noreorder # don't insert nops after branches
 
 glabel func_80240208_ED9028
-/* ED9028 80240208 3C038008 */  lui       $v1, %hi(D_8007C760)
-/* ED902C 8024020C 8C63C760 */  lw        $v1, %lo(D_8007C760)($v1)
+/* ED9028 80240208 3C038008 */  lui       $v1, %hi(D_8007C760_D15580)
+/* ED902C 8024020C 8C63C760 */  lw        $v1, %lo(D_8007C760_D15580)($v1)
 /* ED9030 80240210 3C014334 */  lui       $at, 0x4334
 /* ED9034 80240214 44816000 */  mtc1      $at, $f12
 /* ED9038 80240218 27BDFFE8 */  addiu     $sp, $sp, -0x18
@@ -16,9 +16,9 @@ glabel func_80240208_ED9028
 /* ED9054 80240234 000218C0 */  sll       $v1, $v0, 3
 /* ED9058 80240238 00431021 */  addu      $v0, $v0, $v1
 /* ED905C 8024023C 000210C0 */  sll       $v0, $v0, 3
-/* ED9060 80240240 3C01800C */  lui       $at, %hi(D_800B8DEC)
+/* ED9060 80240240 3C01800C */  lui       $at, %hi(D_800B8DEC_D51C0C)
 /* ED9064 80240244 00220821 */  addu      $at, $at, $v0
-/* ED9068 80240248 C4208DEC */  lwc1      $f0, %lo(D_800B8DEC)($at)
+/* ED9068 80240248 C4208DEC */  lwc1      $f0, %lo(D_800B8DEC_D51C0C)($at)
 /* ED906C 8024024C 460C0300 */  add.s     $f12, $f0, $f12
 /* ED9070 80240250 0C00AB85 */  jal       func_8002AE14
 /* ED9074 80240254 0080802D */   daddu    $s0, $a0, $zero

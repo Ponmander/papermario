@@ -139,8 +139,8 @@ glabel func_802401A0_DDC9D0
 /* DDCBD0 802403A0 AFA90130 */  sw        $t1, 0x130($sp)
 /* DDCBD4 802403A4 8FA90170 */  lw        $t1, 0x170($sp)
 /* DDCBD8 802403A8 4480A000 */  mtc1      $zero, $f20
-/* DDCBDC 802403AC 3C138024 */  lui       $s3, %hi(D_80241778)
-/* DDCBE0 802403B0 26731778 */  addiu     $s3, $s3, %lo(D_80241778)
+/* DDCBDC 802403AC 3C138024 */  lui       $s3, %hi(D_80241778_DDDFA8)
+/* DDCBE0 802403B0 26731778 */  addiu     $s3, $s3, %lo(D_80241778_DDDFA8)
 /* DDCBE4 802403B4 AFA00134 */  sw        $zero, 0x134($sp)
 /* DDCBE8 802403B8 8D320070 */  lw        $s2, 0x70($t1)
 /* DDCBEC 802403BC 3C013F80 */  lui       $at, 0x3f80
@@ -299,8 +299,8 @@ glabel func_802401A0_DDC9D0
 /* DDCE38 80240608 E620FFF8 */  swc1      $f0, -8($s1)
 /* DDCE3C 8024060C E622FFFC */  swc1      $f2, -4($s1)
 /* DDCE40 80240610 E6240000 */  swc1      $f4, ($s1)
-/* DDCE44 80240614 3C098024 */  lui       $t1, %hi(D_80241778)
-/* DDCE48 80240618 25291778 */  addiu     $t1, $t1, %lo(D_80241778)
+/* DDCE44 80240614 3C098024 */  lui       $t1, %hi(D_80241778_DDDFA8)
+/* DDCE48 80240618 25291778 */  addiu     $t1, $t1, %lo(D_80241778_DDDFA8)
 /* DDCE4C 8024061C 25220018 */  addiu     $v0, $t1, 0x18
 /* DDCE50 80240620 0262102B */  sltu      $v0, $s3, $v0
 /* DDCE54 80240624 1440FF68 */  bnez      $v0, .L802403C8
@@ -344,8 +344,8 @@ glabel func_802401A0_DDC9D0
 /* DDCEEC 802406BC 24A51D80 */  addiu     $a1, $a1, %lo(gCameras)
 /* DDCEF0 802406C0 2408000E */  addiu     $t0, $zero, 0xe
 /* DDCEF4 802406C4 24070010 */  addiu     $a3, $zero, 0x10
-/* DDCEF8 802406C8 3C038024 */  lui       $v1, %hi(D_80241778)
-/* DDCEFC 802406CC 24631778 */  addiu     $v1, $v1, %lo(D_80241778)
+/* DDCEF8 802406C8 3C038024 */  lui       $v1, %hi(D_80241778_DDDFA8)
+/* DDCEFC 802406CC 24631778 */  addiu     $v1, $v1, %lo(D_80241778_DDDFA8)
 /* DDCF00 802406D0 3C068016 */  lui       $a2, %hi(gCollisionStatus+0x2)
 /* DDCF04 802406D4 84C6A552 */  lh        $a2, %lo(gCollisionStatus+0x2)($a2)
 .L802406D8:

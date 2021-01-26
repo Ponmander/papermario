@@ -4,8 +4,8 @@
 glabel func_802A9990_42ED30
 /* 42ED30 802A9990 27BDFFE8 */  addiu     $sp, $sp, -0x18
 /* 42ED34 802A9994 AFB00010 */  sw        $s0, 0x10($sp)
-/* 42ED38 802A9998 3C10802A */  lui       $s0, %hi(D_8029FBE0)
-/* 42ED3C 802A999C 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0)
+/* 42ED38 802A9998 3C10802A */  lui       $s0, %hi(D_8029FBE0_424F80)
+/* 42ED3C 802A999C 2610FBE0 */  addiu     $s0, $s0, %lo(D_8029FBE0_424F80)
 /* 42ED40 802A99A0 AFBF0014 */  sw        $ra, 0x14($sp)
 /* 42ED44 802A99A4 0C05123D */  jal       free_icon
 /* 42ED48 802A99A8 8E040004 */   lw       $a0, 4($s0)

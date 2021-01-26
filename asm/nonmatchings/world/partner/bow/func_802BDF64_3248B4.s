@@ -5,13 +5,13 @@ glabel func_802BDF64_3248B4
 /* 3248B4 802BDF64 27BDFFE0 */  addiu     $sp, $sp, -0x20
 /* 3248B8 802BDF68 AFB00010 */  sw        $s0, 0x10($sp)
 /* 3248BC 802BDF6C AFB20018 */  sw        $s2, 0x18($sp)
-/* 3248C0 802BDF70 3C12802C */  lui       $s2, %hi(D_802BE0C0)
-/* 3248C4 802BDF74 2652E0C0 */  addiu     $s2, $s2, %lo(D_802BE0C0)
+/* 3248C0 802BDF70 3C12802C */  lui       $s2, %hi(D_802BE0C0_324A10)
+/* 3248C4 802BDF74 2652E0C0 */  addiu     $s2, $s2, %lo(D_802BE0C0_324A10)
 /* 3248C8 802BDF78 AFBF001C */  sw        $ra, 0x1c($sp)
 /* 3248CC 802BDF7C AFB10014 */  sw        $s1, 0x14($sp)
 /* 3248D0 802BDF80 8E420000 */  lw        $v0, ($s2)
-/* 3248D4 802BDF84 3C118011 */  lui       $s1, %hi(D_8010EBB0)
-/* 3248D8 802BDF88 2631EBB0 */  addiu     $s1, $s1, %lo(D_8010EBB0)
+/* 3248D4 802BDF84 3C118011 */  lui       $s1, %hi(D_8010EBB0_175500)
+/* 3248D8 802BDF88 2631EBB0 */  addiu     $s1, $s1, %lo(D_8010EBB0_175500)
 /* 3248DC 802BDF8C 1040000E */  beqz      $v0, .L802BDFC8
 /* 3248E0 802BDF90 0080802D */   daddu    $s0, $a0, $zero
 /* 3248E4 802BDF94 0C038069 */  jal       enable_player_input

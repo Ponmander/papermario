@@ -4,8 +4,8 @@
 glabel func_802A11C0_743FB0
 /* 743FB0 802A11C0 3C058011 */  lui       $a1, %hi(gPlayerData)
 /* 743FB4 802A11C4 24A5F290 */  addiu     $a1, $a1, %lo(gPlayerData)
-/* 743FB8 802A11C8 3C04802A */  lui       $a0, %hi(D_802A4020)
-/* 743FBC 802A11CC 24844020 */  addiu     $a0, $a0, %lo(D_802A4020)
+/* 743FB8 802A11C8 3C04802A */  lui       $a0, %hi(D_802A4020_746E10)
+/* 743FBC 802A11CC 24844020 */  addiu     $a0, $a0, %lo(D_802A4020_746E10)
 /* 743FC0 802A11D0 94A202A0 */  lhu       $v0, 0x2a0($a1)
 /* 743FC4 802A11D4 8C830000 */  lw        $v1, ($a0)
 /* 743FC8 802A11D8 0043102A */  slt       $v0, $v0, $v1

@@ -14,9 +14,9 @@ glabel func_802A1494_78A2F4
 /* 78A318 802A14B8 00651821 */  addu      $v1, $v1, $a1
 /* 78A31C 802A14BC 00621821 */  addu      $v1, $v1, $v0
 /* 78A320 802A14C0 00031880 */  sll       $v1, $v1, 2
-/* 78A324 802A14C4 3C06802A */  lui       $a2, %hi(D_8029C890)
+/* 78A324 802A14C4 3C06802A */  lui       $a2, %hi(D_8029C890_7856F0)
 /* 78A328 802A14C8 00C33021 */  addu      $a2, $a2, $v1
-/* 78A32C 802A14CC 8CC6C890 */  lw        $a2, %lo(D_8029C890)($a2)
+/* 78A32C 802A14CC 8CC6C890 */  lw        $a2, %lo(D_8029C890_7856F0)($a2)
 /* 78A330 802A14D0 0C098F3F */  jal       set_animation
 /* 78A334 802A14D4 0000282D */   daddu    $a1, $zero, $zero
 /* 78A338 802A14D8 8FBF0010 */  lw        $ra, 0x10($sp)

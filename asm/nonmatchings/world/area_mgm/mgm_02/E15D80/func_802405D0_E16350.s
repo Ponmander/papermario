@@ -7,8 +7,8 @@ glabel func_802405D0_E16350
 /* E16358 802405D8 AFBF002C */  sw        $ra, 0x2c($sp)
 /* E1635C 802405DC 0C00FB3A */  jal       get_enemy
 /* E16360 802405E0 AFB00028 */   sw       $s0, 0x28($sp)
-/* E16364 802405E4 3C04802F */  lui       $a0, %hi(D_802EAFDC)
-/* E16368 802405E8 2484AFDC */  addiu     $a0, $a0, %lo(D_802EAFDC)
+/* E16364 802405E4 3C04802F */  lui       $a0, %hi(D_802EAFDC_EC0D5C)
+/* E16368 802405E8 2484AFDC */  addiu     $a0, $a0, %lo(D_802EAFDC_EC0D5C)
 /* E1636C 802405EC 8C50006C */  lw        $s0, 0x6c($v0)
 /* E16370 802405F0 3C028000 */  lui       $v0, 0x8000
 /* E16374 802405F4 24050163 */  addiu     $a1, $zero, 0x163

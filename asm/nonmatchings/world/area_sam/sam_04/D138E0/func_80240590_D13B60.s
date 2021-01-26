@@ -12,7 +12,7 @@ glabel func_80240590_D13B60
 /* D13B7C 802405AC 24020002 */  addiu     $v0, $zero, 2
 /* D13B80 802405B0 8FBF0010 */  lw        $ra, 0x10($sp)
 /* D13B84 802405B4 24030001 */  addiu     $v1, $zero, 1
-/* D13B88 802405B8 3C018024 */  lui       $at, %hi(D_8024387C)
-/* D13B8C 802405BC AC23387C */  sw        $v1, %lo(D_8024387C)($at)
+/* D13B88 802405B8 3C018024 */  lui       $at, %hi(D_8024387C_D16E4C)
+/* D13B8C 802405BC AC23387C */  sw        $v1, %lo(D_8024387C_D16E4C)($at)
 /* D13B90 802405C0 03E00008 */  jr        $ra
 /* D13B94 802405C4 27BD0018 */   addiu    $sp, $sp, 0x18

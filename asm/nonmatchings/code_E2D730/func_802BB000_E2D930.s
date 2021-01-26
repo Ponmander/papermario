@@ -30,12 +30,12 @@ glabel func_802BB000_E2D930
 /* E2D990 802BB060 9604002C */  lhu       $a0, 0x2c($s0)
 /* E2D994 802BB064 96020028 */  lhu       $v0, 0x28($s0)
 /* E2D998 802BB068 9603002A */  lhu       $v1, 0x2a($s0)
-/* E2D99C 802BB06C 3C01802C */  lui       $at, %hi(D_802BCE32)
-/* E2D9A0 802BB070 A424CE32 */  sh        $a0, %lo(D_802BCE32)($at)
-/* E2D9A4 802BB074 3C01802C */  lui       $at, %hi(D_802BCE34)
-/* E2D9A8 802BB078 A422CE34 */  sh        $v0, %lo(D_802BCE34)($at)
-/* E2D9AC 802BB07C 3C01802C */  lui       $at, %hi(D_802BCE30)
-/* E2D9B0 802BB080 A423CE30 */  sh        $v1, %lo(D_802BCE30)($at)
+/* E2D99C 802BB06C 3C01802C */  lui       $at, %hi(D_802BCE32_E2F762)
+/* E2D9A0 802BB070 A424CE32 */  sh        $a0, %lo(D_802BCE32_E2F762)($at)
+/* E2D9A4 802BB074 3C01802C */  lui       $at, %hi(D_802BCE34_E2F764)
+/* E2D9A8 802BB078 A422CE34 */  sh        $v0, %lo(D_802BCE34_E2F764)($at)
+/* E2D9AC 802BB07C 3C01802C */  lui       $at, %hi(D_802BCE30_E2F760)
+/* E2D9B0 802BB080 A423CE30 */  sh        $v1, %lo(D_802BCE30_E2F760)($at)
 /* E2D9B4 802BB084 0C039769 */  jal       set_action_state
 /* E2D9B8 802BB088 2404001D */   addiu    $a0, $zero, 0x1d
 .L802BB08C:
