@@ -6709,7 +6709,7 @@ segments:
     - [0xC047F0, data]
     - [0xC20C70, rodata]
     - [0xC20CF8, rodata]
-  - [0xC20F40, data]
+  - [0xC20F40, bin]
   - name: world/area_dgb/dgb_02/
     type: code
     overlay: True
