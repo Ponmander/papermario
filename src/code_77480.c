@@ -6,6 +6,8 @@ extern s32 D_8010C940;
 extern s32 D_8010C950;
 extern s32 D_8010C958;
 
+extern s32 D_802BDF60;
+
 INCLUDE_ASM(s32, "code_77480", test_below_player);
 
 INCLUDE_ASM(s32, "code_77480", func_800DE46C);
@@ -33,7 +35,28 @@ INCLUDE_ASM(s32, "code_77480", test_player_lateral);
 
 INCLUDE_ASM(s32, "code_77480", update_player);
 
-INCLUDE_ASM(s32, "code_77480", check_input_use_partner);
+void check_input_use_partner(void) {
+    PlayerStatus* playerStatus = PLAYER_STATUS;
+    PlayerStatus* playerStatus2 = PLAYER_STATUS;
+    PlayerData *playerData = PLAYER_DATA;
+    u32 animFlags = playerStatus->animFlags;
+    u32 actionState = playerStatus->actionState;
+
+    if (!(animFlags & 0x4000)) {
+        if (((animFlags & 8) || (playerStatus->statusMenuCounterinputEnabledCounter == 0)) &&
+            (playerStatus->pressedButtons & Button_C_DOWN) &&
+            (!(playerStatus->flags & 0x80)) &&
+            (!(playerStatus->pressedButtons & Button_B)) &&
+            (!(animFlags & 0x1000)) &&
+            (actionState < 3)) {
+            if (playerData->currentPartner == 1) {
+                D_802BDF60 = playerStatus2->unk_C6;
+            }
+            partner_use_ability();
+        }
+    }
+
+}
 
 INCLUDE_ASM(s32, "code_77480", func_800DFAAC);
 
