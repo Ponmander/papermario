@@ -105,7 +105,10 @@ class N64SegCode(N64Segment):
         return f"code_{addr:X}"
 
     def get_func_name(self, addr):
-        return self.provided_symbols.get(addr, f"func_{addr:X}")
+        if addr in self.provided_symbols and not self.provided_symbols[addr].startswith("D_"):
+            return self.provided_symbols[addr]
+        else:
+            return f"func_{addr:X}"
 
     def get_unique_func_name(self, func_addr, rom_addr):
         func_name = self.get_func_name(func_addr)
@@ -197,7 +200,7 @@ class N64SegCode(N64Segment):
                     jump_func.startswith("func_")
                     and self.is_overlay
                     and jal_addr >= self.vram_addr
-                    and jal_addr <= (self.vram_addr + self.rom_end - self.rom_start)
+                    and jal_addr <= self.vram_end
                 ):
                     func_loc = self.rom_start + jal_addr - self.vram_addr
                     jump_func += "_{:X}".format(func_loc)

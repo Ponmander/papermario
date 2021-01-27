@@ -15,9 +15,9 @@ ApiStatus GoompaTakeOut(ScriptInstance* script, s32 isInitialCall) {
     return func_800EECE8(owner) != 0;
 }
 
-INCLUDE_ASM(s32, "world_goompa", func_802BD14C);
+INCLUDE_ASM(s32, "world/partner/goompa", func_802BD14C);
 
-INCLUDE_ASM(s32, "world_goompa", func_802BD4E0);
+INCLUDE_ASM(s32, "world/partner/goompa", func_802BD4E0);
 
 ApiStatus GoompaUseAbility(ScriptInstance* script, s32 isInitialCall) {
     return ApiStatus_DONE2;

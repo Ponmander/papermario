@@ -457,7 +457,7 @@ segments:
     files:
     - [0x317020, c, world/partner/goombario]
     - [0x317b60, .data, world/partner/goombario]
-    - [0x317DA0, rodata, world/partner/goombario] # rodata containing a double and a jumptable
+    - [0x317DA0, .rodata, world/partner/goombario]
   - type: code
     ld_name: world_partner_bombette
     start: 0x317e50
@@ -526,7 +526,7 @@ segments:
     files:
     - [0x324a10, c, world/partner/goompa]
     - [0x324e80, .data, world/partner/goompa]
-    - [0x324F00, rodata, world/partner/goompa] # rodata with single f64 0.8
+    - [0x324F00, .rodata, world/partner/goompa]
   - type: code
     ld_name: world_partner_goombaria
     start: 0x324f10
