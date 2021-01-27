@@ -22,7 +22,6 @@ void world_goombario_init(Npc* partner) {
 
 INCLUDE_ASM(ApiStatus, "world/partner/goombario", func_802BD188, ScriptInstance* script, s32 isInitialCall);
 
-// uses rodata f64(?) at 802BDE80 = 0.8
 INCLUDE_ASM(ApiStatus, "world/partner/goombario", func_802BD1D0, ScriptInstance* script, s32 isInitialCall);
 
 INCLUDE_ASM(s32, "world/partner/goombario", func_802BD564);
@@ -45,10 +44,9 @@ INCLUDE_ASM(s32, "world/partner/goombario", world_goombario_can_pause, Npc* part
 #endif
 
 // get message for tattle routine
-// has big jumptable at rodata 802BDE88
-INCLUDE_ASM(ApiStatus, "world/partner/goombario", func_802BD5D8, ScriptInstance* script, s32 isInitialCall);
+INCLUDE_ASM(ApiStatus, "world/partner/goombario", func_802BD5D8_3174F8, ScriptInstance* script, s32 isInitialCall);
 
-INCLUDE_ASM(ApiStatus, "world/partner/goombario", func_802BDB30, ScriptInstance* script, s32 isInitialCall);
+INCLUDE_ASM(ApiStatus, "world/partner/goombario", func_802BDB30_317A50, ScriptInstance* script, s32 isInitialCall);
 
 ApiStatus func_802BDB84(ScriptInstance* script, s32 isInitialCall) {
     s32 unk = script->owner2.npc; // todo what is this?
@@ -102,14 +100,14 @@ Script world_goombario_update = SCRIPT({
 });
 
 Script world_goombario_use_ability = SCRIPT({
-    func_802BD5D8(); // returns tattle message id on SI_VAR(0), and something else on SI_VAR(1)
+    func_802BD5D8_3174F8(); // returns tattle message id on SI_VAR(0), and something else on SI_VAR(1)
 
     if (SI_VAR(0) == -1) {
         return;
     }
 
     if (SI_VAR(0) == 0) {
-        func_802BDB30();
+        func_802BDB30_317A50();
         return;
     }
 
@@ -120,7 +118,7 @@ Script world_goombario_use_ability = SCRIPT({
 
     sleep 1;
 
-    func_802BDB30();
+    func_802BDB30_317A50();
 });
 
 Script world_goombario_put_away = SCRIPT({
